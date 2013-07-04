@@ -8,7 +8,7 @@ import android.view.View;
 
 public class TelaInicial extends Activity {
 
-	Intent menu = new Intent(this, Menu_Adm.class);
+
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +24,7 @@ public class TelaInicial extends Activity {
 	}
 	
 	public void Click(View v){
-		
+		Intent menu = new Intent(this, Menu_Adm.class);
 		startActivity(menu);
 		
 	}
