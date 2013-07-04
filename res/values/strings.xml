@@ -4,5 +4,20 @@
     <string name="app_name">GBManager</string>
     <string name="action_settings">Settings</string>
     <string name="gbmanager">GBManager</string>
+    <string name="login">Login</string>
+    <string name="senha">Senha</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_limpar">Limpar</string>
+    <string name="title_activity_menu">Menu</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu">Menu</string>
+    <string name="logo_descricao">Logo da Global</string>
+    <string name="novo_cadastro">Novo Cadastro</string>
+    <string name="nova_tarefa">Nova Tarefa</string>
+    <string name="nova_os">Nova OS</string>
+    <string name="monitoramento">Monitoramento</string>
+    <string name="configuracao">Configurações</string>
+    <string name="sair">Sair</string>
+    <string name="title_activity_menu__adm">Menu_Adm</string>
 
 </resources>
