@@ -28,7 +28,11 @@
         </activity>
         <activity
             android:name="com.lp3.gbmanager.NovaOrdemServico"
-            android:label="@string/title_activity_nova_ordem_servico" >
+            android:label="@string/title_activity_novaordemservico" >
+        </activity>
+        <activity
+            android:name="com.lp3.gbmanager.NovaTarefa"
+            android:label="@string/title_activity_nova_tarefa" >
         </activity>
     </application>
 

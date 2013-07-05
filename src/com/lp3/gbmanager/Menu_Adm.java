@@ -25,5 +25,10 @@ public class Menu_Adm extends Activity {
 		Intent os = new Intent(this,NovaOrdemServico.class);
 		startActivity(os);
 	}
-
+	
+	public void ClickNovaTarefa(View v){
+		Intent novaTarefa= new Intent(this,NovaTarefa.class);
+		startActivity(novaTarefa);
+		
+	}
 }
