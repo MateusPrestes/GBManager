@@ -26,6 +26,10 @@
             android:name="com.lp3.gbmanager.Menu_Adm"
             android:label="@string/title_activity_menu__adm" >
         </activity>
+        <activity
+            android:name="com.lp3.gbmanager.NovaOrdemServico"
+            android:label="@string/title_activity_nova_ordem_servico" >
+        </activity>
     </application>
 
 </manifest>

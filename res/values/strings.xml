@@ -19,5 +19,22 @@
     <string name="configuracao">Configurações</string>
     <string name="sair">Sair</string>
     <string name="title_activity_menu__adm">Menu_Adm</string>
+    <string name="title_activity_nova_ordem_servico">GBManager</string>
+    
+   <string name="title_novaOrdemDeServico">Nova Ordem de Serviço</string>
+    <string name="title_activity_cadastro_usuario">CadastroUsuario</string>
+    <string name="label_cliente">Cliente</string>
+    <string name="label_contrato">Contrato</string>
+    <string name="label_endereco">Endereço</string>
+    <string name="label_descricao">Descrição</string>
+    <string name="label_usuario">Usuário</string>
+    <string name="spinner1_prompt">Selecione Usuário</string>
+    <string-array name ="spinner1_entries">
+        <item>João</item>
+        <item>Maria</item>
+	</string-array>
+	<string name="label_prazo">Prazo</string>
+	<string name="button_enviar">Enviar</string>
+	<string name="button_limpar">Limpar</string>
 
 </resources>
