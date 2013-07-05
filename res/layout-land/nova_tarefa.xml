@@ -64,6 +64,7 @@
         android:layout_alignLeft="@+id/imageView1"
         android:layout_below="@+id/imageView1"
         android:layout_marginTop="28dp"
+        android:layout_toLeftOf="@+id/button1"
         android:text="@string/label_descricao2" />
 
     <TextView
@@ -79,26 +80,25 @@
         android:id="@+id/editText2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView4"
         android:layout_alignTop="@+id/spinner1"
+        android:layout_toRightOf="@+id/button2"
         android:ems="10" />
 
     <Spinner
         android:id="@+id/spinner1"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/button1"
+        android:layout_alignRight="@+id/textView2"
         android:layout_below="@+id/textView3"
         android:entries="@array/spinnerTarefa_entries"
-        android:prompt="@string/spinnerTarefa_prompt"
-        android:layout_marginRight="150dp" />
+        android:prompt="@string/spinnerTarefa_prompt" />
 
     <Button
         android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/spinner1"
-        android:layout_marginTop="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
         android:layout_toLeftOf="@+id/textView1"
         android:text="@string/button_enviarTarefa" />
 
@@ -106,8 +106,7 @@
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/button1"
-        android:layout_alignBottom="@+id/button1"
+        android:layout_below="@+id/spinner1"
         android:layout_toRightOf="@+id/textView1"
         android:text="@string/button_limparTarefa" />
 
