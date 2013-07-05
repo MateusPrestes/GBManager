@@ -37,20 +37,33 @@
     <string name="label_prazo">Prazo</string>
     <string name="button_enviar">Enviar</string>
     <string name="button_limpar">Limpar</string>
-    
     <string name="title_activity_nova_tarefa">NovaTarefa</string>
-    
     <string name="label_novaTarefa">Nova Tarefa</string>
-	<string name="label_descricao2">Descrição</string>
-	<string name="label_usuario2">Usuário</string>
-	<string name="spinnerTarefa_prompt">Selecione Usuário</string>
+    <string name="label_descricao2">Descrição</string>
+    <string name="label_usuario2">Usuário</string>
+    <string name="spinnerTarefa_prompt">Selecione Usuário</string>
 
     <string-array name="spinnerTarefa_entries">
         <item>Usuário 1</item>
         <item>Usuário 2</item>
         <item>Usuário 3</item>
     </string-array>
-	<string name="label_prazoTarefa">Prazo</string>
-	<string name="button_enviarTarefa">Enviar</string>
-	<string name="button_limparTarefa">Limpar</string>
+
+    <string name="label_prazoTarefa">Prazo</string>
+    <string name="button_enviarTarefa">Enviar</string>
+    <string name="button_limparTarefa">Limpar</string>
+    <string name="title_activity_minhas_tarefas">MinhasTarefas</string>
+    <string name="label_minhasTarefas">Minhas Tarefas</string>
+    <string name="button_iniciarTarefa">Iniciar</string>
+    <string name="button_voltar">Voltar</string>
+    <string name="title_activity_ordem_de_servico">OrdemDeServico</string>
+    <string name="spinner1_OS_prompt">Selecione Usuário</string>
+    <string-array name="spinner1_OS_entries">
+        <item>João</item>
+        <item>Maria</item>        
+    </string-array>
+    <string name="title_ordemDeServico">Ordem de Serviço</string>
+    <string name="button_iniciarOS">Iniciar</string>
+    <string name="button_voltarDeOS">Voltar</string>
+
 </resources>
