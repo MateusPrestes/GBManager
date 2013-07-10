@@ -31,4 +31,16 @@ public class Menu_Adm extends Activity {
 		startActivity(novaTarefa);
 		
 	}
+	
+	public void ClickTarefas(View v){
+		Intent tarefas = new Intent(this, Tarefas.class);
+		startActivity(tarefas);
+		
+	}
+	
+	public void ClickCadastroUsuario(View v){
+		Intent cadastrousuario = new Intent(this, CadastroUsuario.class);
+		startActivity(cadastrousuario);
+	}
+	
 }

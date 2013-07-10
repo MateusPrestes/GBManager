@@ -146,17 +146,6 @@
         android:layout_alignLeft="@+id/editText2"
         android:text="@string/label_contrato" />
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="240dp"
-        android:layout_height="45dp"
-        android:layout_alignTop="@+id/imageView1"
-        android:layout_toRightOf="@+id/button1"
-        android:gravity="left"
-        android:paddingTop="5dp"
-        android:text="@string/title_novaOrdemDeServico"
-        android:textSize="20sp" />
-
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
@@ -165,6 +154,18 @@
         android:layout_alignBottom="@+id/button1"
         android:layout_toLeftOf="@+id/editText5"
         android:text="@string/button_limpar" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="240dp"
+        android:layout_height="45dp"
+        android:layout_alignTop="@+id/imageView1"
+        android:layout_marginLeft="34dp"
+        android:layout_toRightOf="@+id/textView2"
+        android:gravity="left"
+        android:paddingTop="5dp"
+        android:text="@string/title_novaOrdemDeServico"
+        android:textSize="20sp" />
 
 </RelativeLayout>
 </ScrollView>

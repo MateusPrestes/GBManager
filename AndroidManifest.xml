@@ -6,8 +6,7 @@
 
     <uses-sdk
         android:minSdkVersion="8"
-        android:targetSdkVersion="17" 
-        />
+        android:targetSdkVersion="17" />
 
     <application
         android:allowBackup="true"
@@ -34,6 +33,26 @@
         <activity
             android:name="com.lp3.gbmanager.NovaTarefa"
             android:label="@string/title_activity_nova_tarefa" >
+        </activity>
+        <activity
+            android:name="com.lp3.gbmanager.CadastroUsuario"
+            android:label="@string/title_activity_cadastro_usuario" >
+        </activity>
+        <activity
+            android:name="com.lp3.gbmanager.Tarefas"
+            android:label="@string/title_activity_tarefas" >
+        </activity>
+        <activity
+            android:name="com.lp3.gbmanager.MinhasTarefas"
+            android:label="@string/title_activity_minhas_tarefas" >
+        </activity>
+        <activity
+            android:name="com.lp3.gbmanager.OrdemDeServico"
+            android:label="@string/title_activity_ordem_de_servico" >
+        </activity>
+        <activity
+            android:name="com.lp3.gbmanager.Atividades"
+            android:label="@string/title_activity_atividades" >
         </activity>
     </application>
 

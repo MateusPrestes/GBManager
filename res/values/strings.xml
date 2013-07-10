@@ -18,10 +18,10 @@
     <string name="monitoramento">Monitoramento</string>
     <string name="configuracao">Configurações</string>
     <string name="sair">Sair</string>
-    <string name="title_activity_menu__adm">Menu_Adm</string>
+    <string name="title_activity_menu__adm">GBManager</string>
     <string name="title_activity_novaordemservico">GBManager</string>
-    <string name="title_novaOrdemDeServico">Nova Ordem de Serviço</string>
-    <string name="title_activity_cadastro_usuario">CadastroUsuario</string>
+    <string name="title_novaOrdemDeServico">Nova OS</string>
+    <string name="title_activity_cadastro_usuario">GBManager</string>
     <string name="label_cliente">Cliente</string>
     <string name="label_contrato">Contrato</string>
     <string name="label_endereco">Endereço</string>
@@ -37,20 +37,53 @@
     <string name="label_prazo">Prazo</string>
     <string name="button_enviar">Enviar</string>
     <string name="button_limpar">Limpar</string>
-    
-    <string name="title_activity_nova_tarefa">NovaTarefa</string>
-    
+    <string name="title_activity_nova_tarefa">GBManager</string>
     <string name="label_novaTarefa">Nova Tarefa</string>
-	<string name="label_descricao2">Descrição</string>
-	<string name="label_usuario2">Usuário</string>
-	<string name="spinnerTarefa_prompt">Selecione Usuário</string>
+    <string name="label_descricao2">Descrição</string>
+    <string name="label_usuario2">Usuário</string>
+    <string name="spinnerTarefa_prompt">Selecione Usuário</string>
+    <string name="usuario">Nome do Usuário</string>
+    <string name="matricula">Matrícula</string>
+    <string name="email">Email</string>
+    <string name="funcao">Função</string>
+    <string name="senhaCadastro">Senha</string>
+    <string name="spinnerInicial">Selecione</string>
 
     <string-array name="spinnerTarefa_entries">
         <item>Usuário 1</item>
         <item>Usuário 2</item>
         <item>Usuário 3</item>
     </string-array>
-	<string name="label_prazoTarefa">Prazo</string>
-	<string name="button_enviarTarefa">Enviar</string>
-	<string name="button_limparTarefa">Limpar</string>
+    <string-array name="opcoesSpinner">
+        <item>Gerente</item>
+        <item>Instalador</item>
+        <item>Supervisor</item>
+    </string-array>
+	<string name="atividades_text">Atividades</string>
+	<string name="voltar2">Atualizar</string>
+    <string name="enviar">Enviar</string>
+    <string name="limpar">Limpar</string>
+    <string name="title_activity_tarefas">GBManager</string>
+    <string name="tarefas">Monitoramento</string>
+    <string name="voltar">Atualizar</string>
+    <string name="title_activity_minhas_tarefas">GBManager</string>
+    <string name="button_limparTarefa">Limpar</string>
+    <string name="label_prazoTarefa">Prazo</string>
+    <string name="button_enviarTarefa">Enviar</string>
+    <string name="label_minhasTarefas">Minhas Tarefas</string>
+    <string name="button_iniciarTarefa">Iniciar</string>
+    <string name="button_voltar">Voltar</string>
+    <string name="title_activity_ordem_de_servico">GBManager</string>
+    <string name="spinner1_OS_prompt">Selecione Usuário</string>
+
+    <string-array name="spinner1_OS_entries">
+        <item>João</item>
+        <item>Maria</item>
+    </string-array>
+
+    <string name="title_ordemDeServico">Ordem de Serviço</string>
+    <string name="button_iniciarOS">Iniciar</string>
+    <string name="button_voltarDeOS">Voltar</string>
+    <string name="title_activity_atividades">GBManager</string>
+
 </resources>

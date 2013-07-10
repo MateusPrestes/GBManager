@@ -2,6 +2,7 @@
 <ScrollView
       android:layout_width="match_parent"
       android:layout_height="match_parent"
+      android:background="@drawable/azulclaro"
       xmlns:tools="http://schemas.android.com/tools"
       xmlns:android="http://schemas.android.com/apk/res/android" >
     <LinearLayout 
@@ -30,6 +31,7 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:typeface="monospace"
         android:text="@string/gbmanager"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 	
@@ -56,6 +58,7 @@
             android:ems="10"
             android:inputType="text"
             android:typeface="monospace"
+            
              >
         </EditText>
 
@@ -71,6 +74,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:focusable="false"
             android:inputType="textPassword"
             android:typeface="monospace" />
     </LinearLayout>

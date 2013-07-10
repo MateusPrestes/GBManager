@@ -1,0 +1,315 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout12"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/azulclaro"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Atividades" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout10"
+        android:layout_width="match_parent"
+        android:layout_height="317dp"
+        android:layout_weight="0.08"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context=".Atividades" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout11"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="40dp"
+                android:layout_height="45dp"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.98"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:typeface="monospace"
+                android:text="@string/atividades_text"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="242dp"
+            android:stretchColumns="0" >
+
+            <TableRow>
+
+                <TextView
+                    android:paddingRight="15dip"
+                    android:typeface="monospace"
+                    android:text="Tipo" />
+
+                <TextView
+                    android:paddingLeft="15dip"
+                    android:typeface="monospace"
+                    android:paddingRight="15dip"
+                    android:text="Prazo" />
+            </TableRow>
+
+            <View
+                android:layout_height="2dip"
+                android:background="#FF909090" />
+
+            <TableRow>
+
+                <TextView
+                    android:paddingRight="15dip"
+                    android:paddingTop="10dip"
+                    android:typeface="monospace"
+                    android:text="Tarefa" />
+
+                <TextView
+                    android:paddingLeft="15dip"
+                    android:paddingRight="15dip"
+                    android:typeface="monospace"
+                    android:paddingTop="10dip"
+                    android:text="10:00" />
+
+                <TextView
+                    android:paddingLeft="15dip"
+                    android:paddingRight="15dip"
+                    android:typeface="monospace"
+                    android:paddingTop="10dip" />
+
+                <Button
+                    android:id="@+id/button2"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Ver"
+                    android:onClick="ClickMinhasTarefas" />
+
+                <TextView
+                    android:paddingLeft="15dip"
+                    android:paddingRight="1dip"
+                    android:typeface="monospace"
+                    android:paddingTop="10dip" />
+            </TableRow>
+
+            <View
+                android:layout_height="2dip"
+                android:background="#FF909090" />
+
+            <TableRow>
+
+                <TextView
+                    android:onClick="ClickMinhasTarefas"
+                    android:typeface="monospace"
+                    android:paddingRight="15dip"
+                    android:paddingTop="10dip"
+                    android:text="OS" />
+
+                <TextView
+                    android:paddingLeft="15dip"
+                    android:paddingRight="15dip"
+                    android:typeface="monospace"
+                    android:paddingTop="10dip" 
+                    android:text="12:00" />
+
+                <TextView
+                    android:paddingLeft="15dip"
+                    android:paddingRight="15dip"
+                    android:typeface="monospace"
+                    android:paddingTop="10dip"
+                    />
+
+                <Button
+                    android:id="@+id/button1"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Ver"
+                    android:onClick="ClickOrdemDeServico" />
+
+                <TextView
+                    android:paddingLeft="15dip"
+                    android:paddingRight="1dip"
+                    android:paddingTop="10dip"
+                    android:typeface="monospace"
+                    android:text="" />
+            </TableRow>
+
+            <View
+                android:layout_height="2dip"
+                android:background="#FF909090" />
+
+            <TableRow>
+
+                <TextView
+                    android:paddingRight="15dip"
+                    android:typeface="monospace"
+                    android:paddingTop="10dip" />
+
+                <TextView
+                    android:paddingLeft="15dip"
+                    android:paddingRight="15dip"
+                    android:typeface="monospace"
+                    android:paddingTop="10dip" />
+
+                <TextView
+                    android:paddingLeft="15dip"
+                    android:typeface="monospace"
+                    android:paddingRight="15dip"
+                    android:paddingTop="10dip" />
+
+                <TextView
+                    android:paddingLeft="15dip"
+                    android:paddingRight="1dip"
+                    android:typeface="monospace"
+                    android:paddingTop="10dip" />
+            </TableRow>
+
+            <View
+                android:layout_height="2dip"
+                android:background="#FF909090" />
+
+            <TableRow>
+
+                <TextView
+                    android:paddingRight="15dip"
+                    android:typeface="monospace"
+                    android:paddingTop="10dip" />
+
+                <TextView
+                    android:paddingLeft="15dip"
+                    android:typeface="monospace"
+                    android:paddingRight="15dip"
+                    android:paddingTop="10dip" />
+
+                <TextView
+                    android:paddingLeft="15dip"
+                    android:typeface="monospace"
+                    android:paddingRight="15dip"
+                    android:paddingTop="10dip" />
+
+                <TextView
+                    android:paddingLeft="15dip"
+                    android:typeface="monospace"
+                    android:paddingRight="1dip"
+                    android:paddingTop="10dip" />
+            </TableRow>
+
+            <View
+                android:layout_height="2dip"
+                android:background="#FF909090" />
+
+            <TableRow>
+
+                <TextView
+                    android:paddingRight="15dip"
+                    android:typeface="monospace"
+                    android:paddingTop="10dip" />
+
+                <TextView
+                    android:paddingLeft="15dip"
+                    android:paddingRight="15dip"
+                    android:typeface="monospace"
+                    android:paddingTop="10dip" />
+
+                <TextView
+                    android:paddingLeft="15dip"
+                    android:paddingRight="15dip"
+                    android:typeface="monospace"
+                    android:paddingTop="10dip" />
+
+                <TextView
+                    android:paddingLeft="15dip"
+                    android:typeface="monospace"
+                    android:paddingRight="1dip"
+                    android:paddingTop="10dip" />
+            </TableRow>
+
+            <View
+                android:layout_height="2dip"
+                android:background="#FF909090" />
+
+            <TableRow>
+
+                <TextView
+                    android:paddingRight="15dip"
+                    android:typeface="monospace"
+                    android:paddingTop="10dip" />
+
+                <TextView
+                    android:paddingLeft="15dip"
+                    android:paddingRight="15dip"
+                    android:typeface="monospace"
+                    android:paddingTop="10dip" />
+
+                <TextView
+                    android:paddingLeft="15dip"
+                    android:paddingRight="15dip"
+                    android:typeface="monospace"
+                    android:paddingTop="10dip" />
+
+                <TextView
+                    android:paddingLeft="15dip"
+                    android:typeface="monospace"
+                    android:paddingRight="1dip"
+                    android:paddingTop="10dip" />
+            </TableRow>
+
+            <View
+                android:layout_height="2dip"
+                android:background="#FF909090" />
+
+            <TableRow>
+
+                <TextView
+                    android:paddingRight="15dip"
+                    android:typeface="monospace"
+                    android:paddingTop="10dip" />
+
+                <TextView
+                    android:paddingLeft="15dip"
+                    android:typeface="monospace"
+                    android:paddingRight="15dip"
+                    android:paddingTop="10dip" />
+
+                <TextView
+                    android:paddingLeft="15dip"
+                    android:paddingRight="15dip"
+                    android:typeface="monospace"
+                    android:paddingTop="10dip" />
+
+                <TextView
+                    android:paddingLeft="15dip"
+                    android:paddingRight="1dip"
+                    android:typeface="monospace"
+                    android:paddingTop="10dip" />
+            </TableRow>
+
+            <View
+                android:layout_height="2dip"
+                android:background="#FF909090" />
+        </TableLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt10"
+        android:layout_width="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/voltar2" />
+
+</LinearLayout>

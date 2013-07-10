@@ -1,7 +1,7 @@
-
 <ScrollView xmlns:tools="http://schemas.android.com/tools"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    android:background="@drawable/azulclaro"
     android:layout_height="match_parent"
     android:layout_gravity="top" >
 
@@ -33,6 +33,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.98"
+            android:typeface="monospace"
             android:gravity="center"
             android:paddingTop="5dp"
             android:text="@string/tarefas"
@@ -49,23 +50,27 @@
         <TextView
             
             android:paddingRight="15dip" 
+            android:typeface="monospace"
             android:text="Usuário"
             />
 
         <TextView
             android:paddingLeft="15dip" 
+            android:typeface="monospace"
             android:paddingRight="15dip"
             android:text="Tipo"
             />
         
         <TextView
             android:paddingLeft="15dip" 
+            android:typeface="monospace"
             android:paddingRight="15dip"
             android:text="Prazo"
             />
         
         <TextView
             android:paddingLeft="15dip" 
+            android:typeface="monospace"
             android:paddingRight="15dip"
             android:text="Status"
             />
@@ -334,4 +339,3 @@
     
 </LinearLayout>
 </ScrollView>
-

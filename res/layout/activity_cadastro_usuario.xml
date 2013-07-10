@@ -1,8 +1,8 @@
-
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
 			xmlns:tools="http://schemas.android.com/tools"
     		android:layout_width="match_parent"
     		android:layout_height="match_parent"
+    		android:background="@drawable/azulclaro"
     		android:layout_gravity="center_horizontal">
 
 <LinearLayout
@@ -33,6 +33,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.98"
+            android:typeface="monospace"
             android:gravity="center"
             android:paddingTop="5dp"
             android:text="@string/title_activity_cadastro_usuario"
@@ -51,11 +52,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/usuario" />
+        
 
         <TextView
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:typeface="monospace"
             android:layout_marginLeft="50dp"
             android:text="@string/matricula" />
     </LinearLayout>
@@ -73,6 +76,7 @@
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:focusable="false"
             android:inputType="textPersonName" >
 
             <requestFocus />
@@ -84,6 +88,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
             android:ems="10"
+            android:focusable="false"
             android:inputType="number" />
     </LinearLayout>
 
@@ -97,6 +102,7 @@
         <TextView
             android:id="@+id/textView4"
             android:layout_width="wrap_content"
+            android:typeface="monospace"
             android:layout_height="wrap_content"
             android:text="@string/email" />
 
@@ -105,6 +111,7 @@
             android:layout_width="match_parent"
             android:layout_height="45dp"
             android:ems="10"
+            android:focusable="false"
             android:inputType="textEmailAddress" />
     </LinearLayout>
 
@@ -119,12 +126,14 @@
             android:id="@+id/textView5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:typeface="monospace"
             android:text="@string/funcao" />
 
         <TextView
             android:id="@+id/textView6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:typeface="monospace"
             android:layout_marginLeft="112dp"
             android:text="@string/senhaCadastro" />
         
@@ -151,6 +160,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
             android:ems="10"
+            android:focusable="false"
             android:inputType="textPassword" />
     
 	</LinearLayout>
@@ -179,6 +189,5 @@
     </LinearLayout>
     
 </LinearLayout>
-
 
 </ScrollView>

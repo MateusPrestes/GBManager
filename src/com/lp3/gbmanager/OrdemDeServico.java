@@ -1,3 +1,5 @@
+
+
 package com.lp3.gbmanager;
 
 import android.os.Bundle;
@@ -12,11 +14,6 @@ public class OrdemDeServico extends Activity {
 		setContentView(R.layout.ordem_de_servico);
 	}
 
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.ordem_de_servico, menu);
-		return true;
-	}
+	
 
 }

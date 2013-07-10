@@ -1,11 +1,13 @@
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+   
+
+ <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@drawable/azulclaro"
     android:layout_height="match_parent" >
-
+	
     <LinearLayout
-        android:id="@+id/LinearLayout1_novaTarefa"
+        android:id="@+id/LinearLayout1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -13,7 +15,7 @@
         android:paddingLeft="@dimen/activity_horizontal_margin"
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin"
-        tools:context=".NovaTarefa" >
+        tools:context=".MinhasTarefas" >
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -26,36 +28,33 @@
                 android:src="@drawable/logo" />
 
             <TextView
-                android:id="@+id/textView1"
+                android:id="@+id/textView_minhasTarefas"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="50dp"
+                android:layout_marginLeft="150dp"
                 android:paddingTop="5dp"
-                android:typeface="monospace"
-                android:text="@string/label_novaTarefa"
+                android:text="@string/label_minhasTarefas"
                 android:textSize="20sp" />
         </LinearLayout>
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/textView_minhasTarefas"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1.60"
-            android:typeface="monospace"
             android:text="@string/label_descricao2"
             android:layout_marginTop="30dp" />
 
         <EditText
-            android:id="@+id/editText1"
+            android:id="@+id/editText_minhasTarefas"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textMultiLine"
             android:gravity="top|left"
-            android:focusable="false"
             android:lines="3" >
 
-            
+            <requestFocus />
         </EditText>
 
         <LinearLayout
@@ -63,21 +62,19 @@
             android:layout_height="wrap_content" >
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/textView3_minhasTarefas"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:typeface="monospace"
                 android:text="@string/label_usuario2" />
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/textView4_minhasTarefas"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/label_prazoTarefa"
                 android:layout_marginTop="10dp"
-                android:typeface="monospace"
-                android:layout_marginLeft="120dp" />
+                android:layout_marginLeft="200dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -93,37 +90,22 @@
                 android:prompt="@string/spinnerTarefa_prompt" />
 
             <EditText
-                android:id="@+id/editText2"
+                android:id="@+id/editText2_minhasTarefas"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:focusable="false"
                 android:inputType="time" />
 
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
-
-            <Button
-                android:id="@+id/button1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/button_enviarTarefa"
-                android:layout_marginLeft="50dp"
-                android:layout_marginTop="15dp" />
-
-            <Button
-                android:id="@+id/button2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/button_limparTarefa"
-                android:layout_marginLeft="60dp"
-                android:layout_marginTop="15dp" />
-
-        </LinearLayout>
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="190dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/button_iniciarTarefa" />
 
     </LinearLayout>
 
