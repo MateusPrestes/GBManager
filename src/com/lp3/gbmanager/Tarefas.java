@@ -1,3 +1,4 @@
+
 package com.lp3.gbmanager;
 
 import android.os.Bundle;
@@ -20,3 +21,4 @@ public class Tarefas extends Activity {
 	}
 
 }
+
