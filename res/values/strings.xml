@@ -30,7 +30,10 @@
     <string name="label_descricao">Descrição</string>
     <string name="label_usuario">Usuário</string>
     <string name="spinner1_prompt">Selecione Usuário</string>
-
+    <string name="txt_almoco">Hora do Almoço!</string>
+    <string name="tittle_tocarAlarme">Tocar Alarme no Almoço</string>
+	<string name="txt_horario">Escolher Horário</string>
+    
     <string-array name="spinner1_entries">
         <item>João</item>
         <item>Maria</item>
@@ -89,5 +92,7 @@
     <string name="button_voltarDeOS">Voltar</string>
     <string name="title_activity_atividades">GBManager</string>
     <string name="title_activity_lista_atividades">ListaAtividades</string>
+    <string name="title_activity_edicao_preferencias">EdicaoPreferencias</string>
+    <string name="title_activity_alarme">AlarmeActivity</string>
 
 </resources>

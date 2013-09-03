@@ -1,0 +1,13 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">    
+	
+	<CheckBoxPreference 
+	    android:key="alarme"
+	    android:title="@string/tittle_tocarAlarme"
+	    android:summary="Marque se deseja ser informado sobre a hora do almoço"/>
+	<com.lp3.gbmanager.PreferenciaTempo
+	    android:key="horario_alarme"
+	    android:title="@string/txt_horario"
+	    android:defaultValue="12:00"
+	    android:summary="Configure seu horário desejado para o alarme"
+	    android:dependency="alarme"/>
+</PreferenceScreen>

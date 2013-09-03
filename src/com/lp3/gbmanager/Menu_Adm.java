@@ -3,7 +3,6 @@ package com.lp3.gbmanager;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
-import android.view.Menu;
 import android.view.View;
 
 public class Menu_Adm extends Activity {
@@ -35,6 +34,13 @@ public class Menu_Adm extends Activity {
 	public void ClickCadastroUsuario(View v){
 		Intent cadastrousuario = new Intent(this, CadastroUsuario.class);
 		startActivity(cadastrousuario);
+	}
+	
+	public void clickConfig(View v){
+		Intent configuracao = new Intent(this,EdicaoPreferencias.class);
+		startActivity(configuracao);
+		
+		
 	}
 	
 }
