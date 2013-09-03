@@ -31,7 +31,7 @@
             android:label="@string/title_activity_novaordemservico" >
         </activity>
         <activity
-            android:name="com.lp3.gbmanager.NovaTarefa"
+            android:name="com.lp3.gbmanager.FormularioTarefa"
             android:label="@string/title_activity_nova_tarefa" >
         </activity>
         <activity

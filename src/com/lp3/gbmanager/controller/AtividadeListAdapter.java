@@ -53,14 +53,34 @@ public class AtividadeListAdapter extends BaseAdapter{
 	    View view = inflater.inflate(R.layout.detalhes_atividade, null);
 
 	    // Atualiza o valor dos campos da tela
+	    TextView id = (TextView) view.findViewById(R.id.id);
+	    id.setText("Id: "+atividade.getId().toString());
 	    TextView cliente = (TextView) view.findViewById(R.id.cliente);
-	    cliente.setText(atividade.getCliente());
-
+	    if(atividade.getCliente()!=null){
+	    	cliente.setText("Cliente: "+atividade.getCliente());
+	    }else{
+	    	cliente.setVisibility(View.INVISIBLE);
+	    }
+	    TextView contrato = (TextView)view.findViewById(R.id.contrato);
+	    if(atividade.getContrato()!=null){
+	    	contrato.setText("Contrato: "+atividade.getContrato());
+	    }else{
+	    	contrato.setVisibility(View.INVISIBLE);
+	    }
 	    TextView descricao = (TextView) view.findViewById(R.id.descricao);
-	    descricao.setText(atividade.getDescricao());
-
+	    if(atividade.getDescricao()!= null){
+	    	descricao.setText("Descricao: "+atividade.getDescricao());
+	    }else{
+	    	descricao.setVisibility(View.INVISIBLE);
+	    }
+	    TextView endereco = (TextView) view.findViewById(R.id.endereco);
+	    if(atividade.getEnd()!= null){
+	    	endereco.setText("End: "+atividade.getEnd());
+	    }else{
+	    	endereco.setVisibility(View.INVISIBLE);
+	    }
 	    TextView prazo = (TextView) view.findViewById(R.id.prazo);
-	    prazo.setText(String.valueOf(atividade.getPrazo()));
+	    prazo.setText("Prazo: "+String.valueOf(atividade.getPrazo()));
 
 	    
 	    
