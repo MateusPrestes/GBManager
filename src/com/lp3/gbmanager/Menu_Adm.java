@@ -20,7 +20,7 @@ public class Menu_Adm extends Activity {
 	}
 	
 	public void ClickNovaTarefa(View v){
-		Intent novaTarefa= new Intent(this,NovaTarefa.class);
+		Intent novaTarefa= new Intent(this,FormularioTarefa.class);
 		startActivity(novaTarefa);
 		
 	}

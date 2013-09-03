@@ -69,7 +69,7 @@ public class RepositorioAtividadesDB {
 			cursor.moveToFirst();
 			AtividadeBean atividade = new AtividadeBean(cursor.getString(cursor.getColumnIndex("cliente")),
 					cursor.getString(cursor.getColumnIndex("end")),
-					cursor.getString(cursor.getColumnIndex("descricao")), cursor.getString(cursor.getColumnIndex("usuario")), cursor.getString(cursor.getColumnIndex("prazo")), cursor.getString(cursor.getColumnIndex("contrato")));
+					cursor.getString(cursor.getColumnIndex("descricao")), cursor.getString(cursor.getColumnIndex("usuario")), cursor.getString(cursor.getColumnIndex("prazo")), cursor.getString(cursor.getColumnIndex("contrato")), cursor.getLong(cursor.getColumnIndex("id")));
 			//atividade.setId(Long.valueOf(cursor.getInt(cursor.getColumnIndex("id"))));
 			//atividade.setImagem(cursor.getBlob(cursor.getColumnIndex("imagem")));
 			db.close();
@@ -90,7 +90,7 @@ public class RepositorioAtividadesDB {
 			do{
 				lista.add(new AtividadeBean(cursor.getString(cursor.getColumnIndex("cliente")),
 						cursor.getString(cursor.getColumnIndex("end")),
-						cursor.getString(cursor.getColumnIndex("descricao")), cursor.getString(cursor.getColumnIndex("usuario")), cursor.getString(cursor.getColumnIndex("prazo")), cursor.getString(cursor.getColumnIndex("contrato"))));
+						cursor.getString(cursor.getColumnIndex("descricao")), cursor.getString(cursor.getColumnIndex("usuario")), cursor.getString(cursor.getColumnIndex("prazo")), cursor.getString(cursor.getColumnIndex("contrato")), cursor.getLong(cursor.getColumnIndex("id"))));
 				//lista.get(lista.size()-1).setId(Long.valueOf(cursor.getInt(cursor.getColumnIndex("id"))));
 				//lista.get(lista.size()-1).setImagem(cursor.getBlob(cursor.getColumnIndex("imagem")));
 			}while(cursor.moveToNext());
@@ -111,7 +111,7 @@ public class RepositorioAtividadesDB {
 			cursor.moveToFirst();
 			AtividadeBean atividade = new AtividadeBean(cursor.getString(cursor.getColumnIndex("cliente")),
 					cursor.getString(cursor.getColumnIndex("end")),
-					cursor.getString(cursor.getColumnIndex("descricao")), cursor.getString(cursor.getColumnIndex("usuario")), cursor.getString(cursor.getColumnIndex("prazo")), cursor.getString(cursor.getColumnIndex("contrato")));
+					cursor.getString(cursor.getColumnIndex("descricao")), cursor.getString(cursor.getColumnIndex("usuario")), cursor.getString(cursor.getColumnIndex("prazo")), cursor.getString(cursor.getColumnIndex("contrato")), cursor.getLong(cursor.getColumnIndex("id")));
 			//carro.setId(Long.valueOf(cursor.getInt(cursor.getColumnIndex("id"))));
 			//carro.setImagem(cursor.getBlob(cursor.getColumnIndex("imagem")));
 			db.close();
