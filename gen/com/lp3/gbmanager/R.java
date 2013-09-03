@@ -58,6 +58,7 @@ public final class R {
         public static final int button1_OS=0x7f090046;
         public static final int button2=0x7f090015;
         public static final int button2_OS=0x7f090047;
+        public static final int chkSalvar=0x7f090106;
         public static final int button_form_tarefa_excluir=0x7f090037;
         public static final int button_form_tarefa_salvar=0x7f090036;
         public static final int cliente=0x7f09001e;
@@ -92,6 +93,7 @@ public final class R {
         public static final int linearLayout5=0x7f09000d;
         public static final int linearLayout6=0x7f090010;
         public static final int linearLayout7=0x7f090013;
+        
         public static final int prazo=0x7f090021;
         public static final int spinner1=0x7f090011;
         public static final int spinner1_OS=0x7f090042;
@@ -130,12 +132,22 @@ public final class R {
         public static final int tela_inicial=0x7f03000a;
     }
     public static final class menu {
-        public static final int lista_atividades=0x7f080000;
+
+        public static final int cadastro_usuario=0x7f080000;
+        public static final int lista_atividades=0x7f080001;
+        public static final int menu__adm=0x7f080002;
+        public static final int minhas_tarefas=0x7f080003;
+        public static final int nova_ordem_servico=0x7f080004;
+        public static final int nova_tarefa=0x7f080005;
+        public static final int ordem_de_servico=0x7f080006;
+        public static final int tarefas=0x7f080007;
+        public static final int tela_inicial=0x7f080008;
     }
     public static final class string {
         public static final int action_settings=0x7f050001;
         public static final int app_name=0x7f050000;
         public static final int atividades_text=0x7f050029;
+        public static final int btn_fechar=0x7f050007;
         public static final int btn_limpar=0x7f050006;
         public static final int btn_login=0x7f050005;
         public static final int button_enviar=0x7f05001c;
@@ -146,7 +158,8 @@ public final class R {
         public static final int button_limparTarefa=0x7f050031;
         public static final int button_voltar=0x7f050036;
         public static final int button_voltarDeOS=0x7f05003b;
-        public static final int configuracao=0x7f05000f;
+        public static final int chk_salvar=0x7f050006;
+        public static final int configuracao=0x7f050011;
         public static final int email=0x7f050025;
         public static final int enviar=0x7f05002b;
         public static final int funcao=0x7f050026;
@@ -172,6 +185,7 @@ public final class R {
         public static final int nova_os=0x7f05000d;
         public static final int nova_tarefa=0x7f05000c;
         public static final int novo_cadastro=0x7f05000b;
+        
         public static final int sair=0x7f050010;
         public static final int senha=0x7f050004;
         public static final int senhaCadastro=0x7f050027;
@@ -214,3 +228,4 @@ public final class R {
         public static final int AppTheme=0x7f070001;
     }
 }
+

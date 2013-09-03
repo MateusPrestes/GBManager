@@ -12,9 +12,8 @@ public class Menu_Adm extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.menu);
+
 	}
-
-
 	
 	public void ClickOS (View v){
 		Intent os = new Intent(this,NovaOrdemServico.class);

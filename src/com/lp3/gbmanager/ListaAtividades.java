@@ -46,7 +46,7 @@ public class ListaAtividades extends ListActivity {
 	private void atualizarLista() {
 	    // Exibe uma janela de aguarde
 	    final ProgressDialog dialog = ProgressDialog.show(this, "Aguarde",
-	        "Buscando atividades, por aguarde...", false, true);
+	        "Buscando atividades, por favor aguarde...", false, true);
 	    
 	    // Necess�rio utilizar um Handler para atualizar a view dentro de uma thread diferente da principal
 	    final Handler handler = new Handler();
