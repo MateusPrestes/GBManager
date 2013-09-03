@@ -7,6 +7,8 @@
     <string name="login">Login</string>
     <string name="senha">Senha</string>
     <string name="btn_login">Login</string>
+    <string name="chk_salvar">Lembrar Usuário</string>
+    <string name="btn_fechar">Fechar programa</string>
     <string name="btn_limpar">Limpar</string>
     <string name="title_activity_menu">Menu</string>
     <string name="hello_world">Hello world!</string>
