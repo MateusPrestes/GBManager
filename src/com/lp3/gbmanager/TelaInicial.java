@@ -17,14 +17,9 @@ public class TelaInicial extends Activity {
 		setContentView(R.layout.tela_inicial);
 	}
 
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.tela_inicial, menu);
-		return true;
-	}
+
 	public void ClickAtividades(){
-		Intent minhastarefas = new Intent(this, Atividades.class);
+		Intent minhastarefas = new Intent(this, ListaAtividades.class);
 		startActivity(minhastarefas);
 		
 	}

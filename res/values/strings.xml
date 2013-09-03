@@ -59,8 +59,9 @@
         <item>Instalador</item>
         <item>Supervisor</item>
     </string-array>
-	<string name="atividades_text">Atividades</string>
-	<string name="voltar2">Atualizar</string>
+
+    <string name="atividades_text">Atividades</string>
+    <string name="voltar2">Atualizar</string>
     <string name="enviar">Enviar</string>
     <string name="limpar">Limpar</string>
     <string name="title_activity_tarefas">GBManager</string>
@@ -85,5 +86,6 @@
     <string name="button_iniciarOS">Iniciar</string>
     <string name="button_voltarDeOS">Voltar</string>
     <string name="title_activity_atividades">GBManager</string>
+    <string name="title_activity_lista_atividades">ListaAtividades</string>
 
 </resources>

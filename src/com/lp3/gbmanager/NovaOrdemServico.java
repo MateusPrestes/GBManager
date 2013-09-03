@@ -12,11 +12,5 @@ public class NovaOrdemServico extends Activity {
 		setContentView(R.layout.nova_ordem_servico);
 	}
 
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.nova_ordem_servico, menu);
-		return true;
-	}
 
 }

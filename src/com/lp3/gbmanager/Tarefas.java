@@ -2,9 +2,10 @@ package com.lp3.gbmanager;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.app.ListActivity;
 import android.view.Menu;
 
-public class Tarefas extends Activity {
+public class Tarefas extends ListActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -12,11 +13,5 @@ public class Tarefas extends Activity {
 		setContentView(R.layout.activity_tarefas);
 	}
 
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.tarefas, menu);
-		return true;
-	}
-
+	
 }

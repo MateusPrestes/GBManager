@@ -14,23 +14,18 @@ public class Atividades extends Activity {
 		setContentView(R.layout.atividades);
 	}
 
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.atividades, menu);
-		return true;
-	}
+
 	
 	public void ClickMinhasTarefas(View v){
 		System.out.println("ENTROU");
-		Intent valor = new Intent(this, MinhasTarefas.class);
-		startActivity(valor);
+		//Intent valor = new Intent(this, MinhasTarefas.class);
+		//startActivity(valor);
 		
 	}
 	public void ClickOrdemDeServico(View v){
 		System.out.println("ENTROU");
-		Intent valor = new Intent(this, OrdemDeServico.class);
-		startActivity(valor);
+		//Intent valor = new Intent(this, OrdemDeServico.class);
+		//startActivity(valor);
 		
 	}
 

@@ -52,7 +52,7 @@
             android:ems="10"
             android:inputType="textMultiLine"
             android:gravity="top|left"
-            android:focusable="false"
+            
             android:lines="3" >
 
             
@@ -98,7 +98,6 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:focusable="false"
                 android:inputType="time" />
 
         </LinearLayout>
@@ -113,7 +112,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/button_enviarTarefa"
                 android:layout_marginLeft="50dp"
-                android:layout_marginTop="15dp" />
+                android:layout_marginTop="15dp"
+                android:onClick="salvarButton" />
 
             <Button
                 android:id="@+id/button2"

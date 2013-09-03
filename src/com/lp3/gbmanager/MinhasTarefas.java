@@ -12,11 +12,6 @@ public class MinhasTarefas extends Activity {
 		setContentView(R.layout.minhas_tarefas);
 	}
 
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.minhas_tarefas, menu);
-		return true;
-	}
+	
 
 }

@@ -14,12 +14,7 @@ public class Menu_Adm extends Activity {
 		setContentView(R.layout.menu);
 	}
 
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.menu__adm, menu);
-		return true;
-	}
+
 	
 	public void ClickOS (View v){
 		Intent os = new Intent(this,NovaOrdemServico.class);
@@ -33,7 +28,7 @@ public class Menu_Adm extends Activity {
 	}
 	
 	public void ClickTarefas(View v){
-		Intent tarefas = new Intent(this, Tarefas.class);
+		Intent tarefas = new Intent(this, ListaAtividades.class);
 		startActivity(tarefas);
 		
 	}

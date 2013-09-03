@@ -54,6 +54,10 @@
             android:name="com.lp3.gbmanager.Atividades"
             android:label="@string/title_activity_atividades" >
         </activity>
+        <activity
+            android:name="com.lp3.gbmanager.ListaAtividades"
+            android:label="@string/title_activity_lista_atividades" >
+        </activity>
     </application>
 
 </manifest>
