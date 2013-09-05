@@ -12,26 +12,32 @@ import com.lp3.gbmanager.model.RepositorioAtividadesDB;
 
 import android.os.Bundle;
 import android.os.Handler;
+import android.preference.PreferenceManager;
 import android.app.Activity;
 import android.app.ListActivity;
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.content.SharedPreferences.OnSharedPreferenceChangeListener;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.ListView;
 
-public class ListaAtividades extends ListActivity {
+public class ListaAtividades extends ListActivity implements OnSharedPreferenceChangeListener {
 	RepositorioAtividadesDB repositorio ;
 	List<AtividadeBean> atividade;
 	
 	 protected static final int ATUALIZAR = 1;
 	 protected static final int FORMULARIO = 2;
 	 protected static final int BUSCAR = 3;
+	 public boolean select = false;
 	
-	@Override
+	 @Override
 	protected void onCreate(Bundle savedInstanceState) {
+		
 		super.onCreate(savedInstanceState);
 		//setContentView(R.layout.lista_atividades);
 		 
@@ -39,23 +45,78 @@ public class ListaAtividades extends ListActivity {
 		    repositorio = new RepositorioAtividadesDB(this);
 		    // Atualiza a lista com os carros.
 		    atualizarLista();
+		    setFonte();
+	        //setCorFonte();
+	        SharedPreferences pref = PreferenceManager.getDefaultSharedPreferences(this);
+			pref.registerOnSharedPreferenceChangeListener((OnSharedPreferenceChangeListener) this);
+	        
+		   
 	}
 
+	@Override
+	public void onResume(){
+		  super.onResume();
+	      
+	      setFonte();
+	      //setCorFonte();
+		 
+		}
 	
+	
+	 public void setFonte(){
+		    if(EdicaoPreferencias.fontePreferencia(this).equals("12")){
+				EdicaoPreferencias.setFonte(12, (TextView)findViewById(R.id.id));
+				EdicaoPreferencias.setFonte(12, (TextView)findViewById(R.id.cliente));
+				EdicaoPreferencias.setFonte(12, (TextView)findViewById(R.id.contrato));
+				EdicaoPreferencias.setFonte(12, (TextView)findViewById(R.id.endereco));
+				EdicaoPreferencias.setFonte(12, (TextView)findViewById(R.id.prazo));
+				EdicaoPreferencias.setFonte(12, (TextView)findViewById(R.id.descricao));
+				EdicaoPreferencias.setFonte(12, (TextView)findViewById(R.id.usuario));
+
+			}
+		    if(EdicaoPreferencias.fontePreferencia(this).equals("14")){
+				EdicaoPreferencias.setFonte(14, (TextView)findViewById(R.id.id));
+				EdicaoPreferencias.setFonte(14, (TextView)findViewById(R.id.cliente));
+				EdicaoPreferencias.setFonte(14, (TextView)findViewById(R.id.contrato));
+				EdicaoPreferencias.setFonte(14, (TextView)findViewById(R.id.endereco));
+				EdicaoPreferencias.setFonte(14, (TextView)findViewById(R.id.prazo));
+				EdicaoPreferencias.setFonte(14, (TextView)findViewById(R.id.descricao));
+				EdicaoPreferencias.setFonte(14, (TextView)findViewById(R.id.usuario));
+		   	}
+			if(EdicaoPreferencias.fontePreferencia(this).equals("16")){
+				EdicaoPreferencias.setFonte(16, (TextView)findViewById(R.id.id));
+				EdicaoPreferencias.setFonte(16, (TextView)findViewById(R.id.cliente));
+				EdicaoPreferencias.setFonte(16, (TextView)findViewById(R.id.contrato));
+				EdicaoPreferencias.setFonte(16, (TextView)findViewById(R.id.endereco));
+				EdicaoPreferencias.setFonte(16, (TextView)findViewById(R.id.prazo));
+				EdicaoPreferencias.setFonte(16, (TextView)findViewById(R.id.descricao));
+				EdicaoPreferencias.setFonte(16, (TextView)findViewById(R.id.usuario));
+			}
+			
+			if(EdicaoPreferencias.fontePreferencia(this).equals("18")){
+				EdicaoPreferencias.setFonte(18, (TextView)findViewById(R.id.id));
+				EdicaoPreferencias.setFonte(18, (TextView)findViewById(R.id.cliente));
+				EdicaoPreferencias.setFonte(18, (TextView)findViewById(R.id.contrato));
+				EdicaoPreferencias.setFonte(18, (TextView)findViewById(R.id.endereco));
+				EdicaoPreferencias.setFonte(18, (TextView)findViewById(R.id.prazo));
+				EdicaoPreferencias.setFonte(18, (TextView)findViewById(R.id.descricao));
+				EdicaoPreferencias.setFonte(18, (TextView)findViewById(R.id.usuario));
+			}
+	 }
 	
 	private void atualizarLista() {
 	    // Exibe uma janela de aguarde
 	    final ProgressDialog dialog = ProgressDialog.show(this, "Aguarde",
 	        "Buscando atividades, por favor aguarde...", false, true);
 	    
-	    // Necess�rio utilizar um Handler para atualizar a view dentro de uma thread diferente da principal
+	    // Necessario utilizar um Handler para atualizar a view dentro de uma thread diferente da principal
 	    final Handler handler = new Handler();
 
 	    new Thread() {
 	      @Override
 	      public void run() {
 	        try {
-	          // Pega a lista de carros e exibe na tela
+	          // Pega a lista de atividades e exibe na tela
 	          atividade = repositorio.listarAtividades();
 	          Log.i("Mateus Prestes","Atualizando lista de atividades");
 	          if (atividade != null) {
@@ -93,12 +154,12 @@ public class ListaAtividades extends ListActivity {
 	        atualizarLista();
 	        break;
 	      case FORMULARIO:
-	        // Abre a tela com o formul�rio para inserir um novo carro
+	        // Abre a tela com o formulario para inserir um novo carro
 	        startActivityForResult(new Intent(this, FormularioTarefa.class),
 	            FORMULARIO);
 	        break;
 	      case BUSCAR:
-	        // Abre a tela para buscar o carro pelo nome
+	        // Abre a tela para buscar a atividade pelo nome
 	        startActivity(new Intent(this, ListaAtividades.class));
 	        break;
 	    }
@@ -107,18 +168,28 @@ public class ListaAtividades extends ListActivity {
 	
 	  protected void onListItemClick(ListView l, View v, int indice, long id) {
 		    super.onListItemClick(l, v, indice, id);
-		    // Recupera o carro selecionado utilizando a posi��o da lista
+		    // Recupera a atividade selecionado utilizando a posi��o da lista
 		    Log.i("LOG_DEBUG","INDICE "+indice);
 		    Log.i("LOG_DEBUG", "ATIVIDADE= "+atividade.size());
 		    AtividadeBean atividade_bean = atividade.get(indice);
 		    
-		    // Cria a intent para abrir a tela do formul�rio
+		    // Cria a intent para abrir a tela do formulario
 		    Intent it = new Intent(this, FormularioTarefa.class);
-		    // Passa o id do carro como par�metro
+		    // Passa o id do carro como parametro
 		    it.putExtra("id", atividade_bean.getId());
 		    Log.i("LOG_DEBUG","ID= "+atividade_bean.getId());
-		    // Abre a tela de edi��o
+		    // Abre a tela de edicao
 		    startActivityForResult(it, FORMULARIO);
 		  }
+
+	@Override
+	public void onSharedPreferenceChanged(SharedPreferences arg0, String arg1) {
+		setFonte();
+		
+	}
+
+	
+	  
+	  
 
 }

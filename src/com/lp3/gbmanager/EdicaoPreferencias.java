@@ -1,6 +1,7 @@
 package com.lp3.gbmanager;
 
 import android.content.ComponentName;
+import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.OnSharedPreferenceChangeListener;
 import android.content.pm.PackageManager;
@@ -9,6 +10,7 @@ import android.os.Bundle;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceManager;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class EdicaoPreferencias extends PreferenceActivity {
 	
@@ -62,13 +64,21 @@ public class EdicaoPreferencias extends PreferenceActivity {
 		}
 	};
 	
-	public static void setFonte(int tamanho, Button b){ 
-		b.setTextSize(tamanho);  	 
+	public static void setFonte(int tamanho, TextView t){ 
+		t.setTextSize(tamanho);  	
+		
 	}
 
-	public static void setColorFonte(String cor, Button b){ 
-		b.setTextColor(Color.parseColor(cor));  	 
+	public static void setColorFonte(String cor, TextView t){ 
+		t.setTextColor(Color.parseColor(cor));  	 
 	}
 	
+	public static String fontePreferencia(Context ctx){
+		return PreferenceManager.getDefaultSharedPreferences(ctx).getString("fonte", "14");
+	}
+	
+	public static String corFontePreferencia(Context ctx){
+		return PreferenceManager.getDefaultSharedPreferences(ctx).getString("colorf", "preto");
+	}
 	
 }
