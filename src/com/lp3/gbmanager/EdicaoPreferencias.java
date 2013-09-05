@@ -4,19 +4,23 @@ import android.content.ComponentName;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.OnSharedPreferenceChangeListener;
 import android.content.pm.PackageManager;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceManager;
+import android.widget.Button;
 
 public class EdicaoPreferencias extends PreferenceActivity {
 	
 	SharedPreferences preferencias = null;
+	private static EdicaoPreferencias preferencia;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {		
 		super.onCreate(savedInstanceState);
 		
-		addPreferencesFromResource(R.layout.preferencias);
+		addPreferencesFromResource(R.xml.preferencias);
+		preferencia = this;
 	}
 	
 	@Override
@@ -38,6 +42,7 @@ public class EdicaoPreferencias extends PreferenceActivity {
 		
 		public void onSharedPreferenceChanged(SharedPreferences sharedPreferences,
 				String key) {
+			
 			if ("alarme".equals(key)) {
 				boolean habilitado = preferencias.getBoolean(key, false);
 				int flag = (habilitado ? PackageManager.COMPONENT_ENABLED_STATE_ENABLED : PackageManager.COMPONENT_ENABLED_STATE_DISABLED);
@@ -56,4 +61,14 @@ public class EdicaoPreferencias extends PreferenceActivity {
 			}
 		}
 	};
+	
+	public static void setFonte(int tamanho, Button b){ 
+		b.setTextSize(tamanho);  	 
+	}
+
+	public static void setColorFonte(String cor, Button b){ 
+		b.setTextColor(Color.parseColor(cor));  	 
+	}
+	
+	
 }

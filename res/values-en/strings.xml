@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+ 	<string name="app_name">GBManager</string>
+    <string name="action_settings">Settings</string>
+    <string name="gbmanager">GBManager</string>
+    <string name="login">Login</string>
+    <string name="senha">Password</string>
+    <string name="btn_login">Login</string>
+    <string name="chk_salvar">Remember User</string>
+    <string name="btn_fechar">Close</string>
+    <string name="btn_limpar">Delete</string>
+    <string name="title_activity_menu">Menu</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu">Menu</string>
+    <string name="logo_descricao">Logo da Global</string>
+    <string name="novo_cadastro">New Users</string>
+    <string name="nova_tarefa">New Task</string>
+    <string name="nova_os">New SO</string>
+    <string name="monitoramento">Tracker</string>
+    <string name="configuracao">Settings</string>
+    <string name="sair">Close</string>
+    <string name="title_activity_menu__adm">GBManager</string>
+    <string name="title_activity_novaordemservico">GBManager</string>
+    <string name="title_novaOrdemDeServico">New SO</string>
+    <string name="title_activity_cadastro_usuario">GBManager</string>
+    <string name="label_cliente">Client</string>
+    <string name="label_contrato">Client ID</string>
+    <string name="label_endereco">Address</string>
+    <string name="label_descricao">Description</string>
+    <string name="label_usuario">Users</string>
+    <string name="spinner1_prompt">Select User</string>
+    <string name="txt_almoco">Lunch Time!</string>
+    <string name="tittle_tocarAlarme">Play Alarm at Lunch</string>
+	<string name="txt_horario">Choose Time</string>
+
+
+	 <string-array name="spinner1_entries">
+        <item>João</item>
+        <item>Maria</item>
+    </string-array>
+
+    <string name="label_prazo">Due Time</string>
+    <string name="button_enviar">Send</string>
+    <string name="button_limpar">Delete</string>
+    <string name="title_activity_nova_tarefa">GBManager</string>
+    <string name="label_novaTarefa">New Task</string>
+    <string name="label_descricao2">Description</string>
+    <string name="label_usuario2">User</string>
+    <string name="spinnerTarefa_prompt">Choose User</string>
+    <string name="usuario">User name</string>
+    <string name="matricula">Registration Number</string>
+    <string name="email">Email</string>
+    <string name="funcao">Job</string>
+    <string name="senhaCadastro">Password</string>
+    <string name="spinnerInicial">Choose</string>
+
+    <string-array name="spinnerTarefa_entries">
+        <item>User 1</item>
+        <item>User 2</item>
+        <item>User 3</item>
+    </string-array>
+    <string-array name="opcoesSpinner">
+        <item>Manager</item>
+        <item>CATV</item>
+        <item>Supervisor</item>
+    </string-array>
+
+    <string name="atividades_text">Activities</string>
+    <string name="voltar2">Update</string>
+    <string name="enviar">Send</string>
+    <string name="limpar">Delete</string>
+    <string name="title_activity_tarefas">GBManager</string>
+    <string name="tarefas">Tracker</string>
+    <string name="voltar">Update</string>
+    <string name="title_activity_minhas_tarefas">GBManager</string>
+    <string name="button_limparTarefa">Delete</string>
+    <string name="label_prazoTarefa">Due Time</string>
+    <string name="button_enviarTarefa">Send</string>
+    <string name="label_minhasTarefas">My Tasks</string>
+    <string name="button_iniciarTarefa">Start</string>
+    <string name="button_voltar">Back</string>
+    <string name="title_activity_ordem_de_servico">GBManager</string>
+    <string name="spinner1_OS_prompt">Choose User</string>
+
+    <string-array name="spinner1_OS_entries">
+        <item>João</item>
+        <item>Maria</item>
+    </string-array>
+
+    <string name="title_ordemDeServico">SO</string>
+    <string name="button_iniciarOS">Start</string>
+    <string name="button_voltarDeOS">Back</string>
+    <string name="title_activity_atividades">GBManager</string>
+    <string name="title_activity_lista_atividades">TaskList</string>
+    <string name="title_activity_edicao_preferencias">Preferences</string>
+    <string name="title_activity_alarme">AlarmeActivity</string>
+	
+
+
+<!-- Preferencias -->
+    <string name="title_activity_preferencias">Preferences</string>
+    <string name="equipe">Team</string>
+    <string name="conf">Settings</string>
+    <string name="about">About the Project</string>
+    <string name="summary_alarme">Mark if you want to be informed about lunchtime</string>
+    <string name="summary_hora">Set your desired time for the alarm</string>
+    <string name="idioma">Language</string>
+    <string name="summary_idioma">Select the desired language for the application</string>
+    <string name="portugues">Portuguese</string>
+    <string name="ingles">English</string>
+    <string name="dialogTitle">Select Language</string>
+    <string name="dialogFonte">Select the Font Size</string>
+    <string name="fonte">Font Size</string>
+    <string name="summary_fonte">Select the desired Font Size for the Main Menu</string>
+    <string name="musica">Music</string>
+    <string name="summary_musica">Check if you want the music to play</string>
+    <string name="bg">Background</string>
+    <string name="summary_bg">Check if you want to change the background picture</string>
+    <string name="corFonte">Font Color</string>
+    <string name="summary_corFonte">Select the desired Font Color for the Main Menu</string>
+    <string name="dialogCFonte">Select the Font Color</string>
+    <string name="PfMenuPrincipal">Preferencias do Monitoramento</string>
+    <string name="PfGeral">General Preferences</string>
+    
+    
+    </resources>

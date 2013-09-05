@@ -15,7 +15,6 @@ public class Atividades extends Activity {
 	}
 
 
-	
 	public void ClickMinhasTarefas(View v){
 		System.out.println("ENTROU");
 		//Intent valor = new Intent(this, MinhasTarefas.class);

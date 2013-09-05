@@ -1,9 +1,14 @@
 package com.lp3.gbmanager;
 
+import java.util.Locale;
+
 import android.os.Bundle;
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.SharedPreferences.OnSharedPreferenceChangeListener;
+import android.content.res.Configuration;
 import android.view.Menu;
 import android.view.View;
 import android.widget.CheckBox;
@@ -14,6 +19,7 @@ public class TelaInicial extends Activity {
 	public static final String PREFS_NAME = "Preferences";
     EditText etUsuario;
     EditText etSenha;
+    
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -80,6 +86,8 @@ public class TelaInicial extends Activity {
     	Intent intent = new Intent(Intent.ACTION_MAIN);
     	finish();
     }
+    
+   
      
 
 }

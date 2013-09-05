@@ -9,7 +9,7 @@
     <string name="btn_login">Login</string>
     <string name="chk_salvar">Lembrar Usuário</string>
     <string name="btn_fechar">Fechar programa</string>
-    <string name="btn_limpar">Limpar</string>
+    <string name="btn_limpar">Deletar</string>
     <string name="title_activity_menu">Menu</string>
     <string name="hello_world">Hello world!</string>
     <string name="menu">Menu</string>
@@ -41,7 +41,7 @@
 
     <string name="label_prazo">Prazo</string>
     <string name="button_enviar">Enviar</string>
-    <string name="button_limpar">Limpar</string>
+    <string name="button_limpar">Deletar</string>
     <string name="title_activity_nova_tarefa">GBManager</string>
     <string name="label_novaTarefa">Nova Tarefa</string>
     <string name="label_descricao2">Descrição</string>
@@ -68,12 +68,12 @@
     <string name="atividades_text">Atividades</string>
     <string name="voltar2">Atualizar</string>
     <string name="enviar">Enviar</string>
-    <string name="limpar">Limpar</string>
+    <string name="limpar">Deletar</string>
     <string name="title_activity_tarefas">GBManager</string>
     <string name="tarefas">Monitoramento</string>
     <string name="voltar">Atualizar</string>
     <string name="title_activity_minhas_tarefas">GBManager</string>
-    <string name="button_limparTarefa">Limpar</string>
+    <string name="button_limparTarefa">Deletar</string>
     <string name="label_prazoTarefa">Prazo</string>
     <string name="button_enviarTarefa">Enviar</string>
     <string name="label_minhasTarefas">Minhas Tarefas</string>
@@ -95,4 +95,24 @@
     <string name="title_activity_edicao_preferencias">EdicaoPreferencias</string>
     <string name="title_activity_alarme">AlarmeActivity</string>
 
+    
+    <!-- Preferencias -->
+    <string name="title_activity_preferencias">Preferências</string>
+    <string name="conf">Configurações</string>
+    <string name="about">Sobre o Projeto</string>
+    <string name="summary_alarme">Marque se deseja ser informado sobre a hora do almoço</string>
+    <string name="summary_hora">Configure seu horário desejado para o alarme</string>
+    <string name="idioma">Idioma</string>
+    <string name="summary_idioma">Selecione o idioma desejado para a aplicação</string>
+    <string name="portugues">Português</string>
+    <string name="ingles">Inglês</string>
+    <string name="dialogTitle">Selecione o Idioma</string>
+    <string name="dialogFonte">Selecione o Tamanho da Fonte</string>
+    <string name="fonte">Tamanho da fonte</string>
+    <string name="summary_fonte">Tamanho da fonte para a Lista de Monitoramento</string>
+    <string name="corFonte">Cor da fonte</string>
+    <string name="summary_corFonte">Selecione a cor da fonte para a Lista de Monitoramento</string>
+    <string name="dialogCFonte">Selecione a Cor da Fonte</string>
+    <string name="PfMonitoramento">Preferências do Monitoramento</string>
+    <string name="PfGeral">Preferências Gerais</string>
 </resources>

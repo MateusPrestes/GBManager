@@ -79,24 +79,7 @@
             <!--android:focusable="false" -->
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/botoes"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" >
-
-       
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/btn_login"
-            android:typeface="monospace"
-            android:onClick="Click" />
-        
-    </LinearLayout>
-    		
-    
-    		<CheckBox
+  	 <CheckBox
             android:id="@+id/chkSalvar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -104,15 +87,37 @@
             android:paddingRight="50dp"
             android:typeface="monospace"
             />
-              
-    		<Button
+  
+  
+    <LinearLayout
+        android:id="@+id/botoes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        
+       
+       
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_login"
+            android:typeface="monospace"
+            android:onClick="Click" />
+        
+    </LinearLayout>
+    		
+    	 <Button
             android:id="@+id/button1"
-            android:layout_width="200dp"
+            android:layout_width="150dp"
             android:layout_height="50dp"
             android:paddingTop="10dp"
             android:text="@string/btn_fechar" 
             android:onClick="btnFechar_Click"
             android:orientation="vertical" />
+    		
+              
+    		
             
 			
        

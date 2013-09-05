@@ -1,17 +1,28 @@
 package com.lp3.gbmanager;
 
-import android.os.Bundle;
+import java.util.Locale;
+
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.content.SharedPreferences.OnSharedPreferenceChangeListener;
+import android.content.res.Configuration;
+import android.os.Bundle;
+import android.preference.PreferenceManager;
+import android.util.Log;
 import android.view.View;
 
-public class Menu_Adm extends Activity {
+public class Menu_Adm extends Activity implements OnSharedPreferenceChangeListener{
+	public boolean select = false;
+	
+	
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.menu);
-
+		SharedPreferences pref = PreferenceManager.getDefaultSharedPreferences(this);
+		pref.registerOnSharedPreferenceChangeListener(this);
 	}
 	
 	public void ClickOS (View v){
@@ -42,5 +53,26 @@ public class Menu_Adm extends Activity {
 		
 		
 	}
+	
+public void onSharedPreferenceChanged(SharedPreferences pref, String key) {	
+    	
+		Log.i("DEBUG", "ENTROU EM SHAREDPREFERENCECHANGED");
+		Log.i("IDIOMA", key);
+		if(key.equals("idioma")){
+			Configuration config = new Configuration(getResources().getConfiguration());
+			if(pref.getString(key, "portugues").equals("portugues")){
+			    config.locale = Locale.ROOT;
+			    getResources().updateConfiguration(config,getResources().getDisplayMetrics());  
+			    select = true;
+			}
+			if(pref.getString(key, "portugues").equals("ingles")){
+			    config.locale = Locale.ENGLISH ;
+			    getResources().updateConfiguration(config,getResources().getDisplayMetrics());
+			    select = true;
+			}
+		}
+    }
+
+
 	
 }

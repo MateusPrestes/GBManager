@@ -5,8 +5,8 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="8"
-        android:targetSdkVersion="17" />
+        android:minSdkVersion="10"
+        android:targetSdkVersion="10" />
 		
 	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 	
@@ -64,9 +64,13 @@
 		<activity
             android:name="com.lp3.gbmanager.EdicaoPreferencias"
             android:label="@string/title_activity_edicao_preferencias" >
+            <intent-filter>
+                <category android:name="android.intent.category.PREFERENCE"></category>
+            </intent-filter>
         </activity>
 
         <receiver
+           
             android:name="com.lp3.gbmanager.ReceptorBoot"
             android:enabled="false" >
             <intent-filter>
