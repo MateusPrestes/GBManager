@@ -2,11 +2,9 @@ package com.lp3.gbmanager.controller;
 
 import java.util.List;
 
-import com.lp3.gbmanager.R;
-import com.lp3.gbmanager.R.id;
-import com.lp3.gbmanager.R.layout;
-import com.lp3.gbmanager.model.AtividadeBean;
 
+import com.lp3.gbmanager.model.Atividade;
+import com.lp3.gbmanager.R;
 
 
 import android.content.Context;
@@ -19,9 +17,9 @@ import android.widget.TextView;
 
 public class AtividadeListAdapter extends BaseAdapter{
 	private Context context;
-	  private List<AtividadeBean> lista;
+	  private List<Atividade> lista;
 
-	  public AtividadeListAdapter(Context context, List<AtividadeBean> lista) {
+	  public AtividadeListAdapter(Context context, List<Atividade> lista) {
 	    this.context = context;
 	    this.lista = lista;
 	  }
@@ -44,7 +42,7 @@ public class AtividadeListAdapter extends BaseAdapter{
 	  @Override
 	  public View getView(int posicao, View convertView, ViewGroup parent) {
 	    // Recupera o Carro da posi��o atual
-	    AtividadeBean atividade = lista.get(posicao);
+	    Atividade atividade = lista.get(posicao);
 
 	    // LayoutInflater permite instanciar uma View a partir de um arquivo de layout XML
 	    LayoutInflater inflater = (LayoutInflater) context

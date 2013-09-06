@@ -6,7 +6,7 @@ import java.util.List;
 
 
 import com.lp3.gbmanager.controller.AtividadeListAdapter;
-import com.lp3.gbmanager.model.AtividadeBean;
+import com.lp3.gbmanager.model.Atividade;
 import com.lp3.gbmanager.model.RepositorioAtividadesDB;
 
 
@@ -24,7 +24,7 @@ import android.widget.ListView;
 
 public class ListaAtividades extends ListActivity {
 	RepositorioAtividadesDB repositorio ;
-	List<AtividadeBean> atividade;
+	List<Atividade> atividade;
 	
 	 protected static final int ATUALIZAR = 1;
 	 protected static final int FORMULARIO = 2;
@@ -110,7 +110,7 @@ public class ListaAtividades extends ListActivity {
 		    // Recupera o carro selecionado utilizando a posi��o da lista
 		    Log.i("LOG_DEBUG","INDICE "+indice);
 		    Log.i("LOG_DEBUG", "ATIVIDADE= "+atividade.size());
-		    AtividadeBean atividade_bean = atividade.get(indice);
+		    Atividade atividade_bean = atividade.get(indice);
 		    
 		    // Cria a intent para abrir a tela do formul�rio
 		    Intent it = new Intent(this, FormularioTarefa.class);

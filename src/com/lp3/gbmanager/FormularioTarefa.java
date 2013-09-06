@@ -5,7 +5,7 @@ package com.lp3.gbmanager;
 
 
 
-import com.lp3.gbmanager.model.AtividadeBean;
+import com.lp3.gbmanager.model.Atividade;
 import com.lp3.gbmanager.model.RepositorioAtividadesDB;
 
 import android.os.Bundle;
@@ -43,13 +43,13 @@ public class FormularioTarefa extends Activity {
 		id = null;
 
 	    Bundle extras = getIntent().getExtras();
-	    // Se for para Editar, recuperar os valores ...
+	    
 	    if (extras != null) {
 	      id = extras.getLong("id");
 
 	      if (id != null) {
-	        // � uma edi��o, busca o carro...
-	        AtividadeBean atividade = repositorio.getAtividade(id);
+	        
+	        Atividade atividade = repositorio.getAtividade(id);
 
 	        if (atividade == null) {
 	          Toast.makeText(this, "Atividade n�o encontrada: " + id,
@@ -58,8 +58,7 @@ public class FormularioTarefa extends Activity {
 	        else {
 	          campoDescricao.setText(atividade.getDescricao());
 	          campoPrazo.setText(atividade.getPrazo());
-	          //campoAno.setText(String.valueOf(atividade.getAno()));
-	          //campoImagem.setImageBitmap(atividade.getBitmap());
+	        
 	        }
 	      }
 	      else {
@@ -72,7 +71,7 @@ public class FormularioTarefa extends Activity {
 	    Button btSalvar = (Button) findViewById(R.id.button_form_tarefa_salvar);
 	    btSalvar.setOnClickListener(new OnClickListener() {
 	      public void onClick(View view) {
-	        AtividadeBean atividade = popularAtividade();
+	        Atividade atividade = popularAtividade();
 	        salvar(atividade);
 	      }
 	    });
@@ -86,14 +85,14 @@ public class FormularioTarefa extends Activity {
 	      // Listener para excluir o carro
 	      btExcluir.setOnClickListener(new OnClickListener() {
 	        public void onClick(View view) {
-	          AtividadeBean atividade2 = repositorio.getAtividade(id);
+	          Atividade atividade2 = repositorio.getAtividade(id);
 	          excluir(atividade2);
 	        }
 	      });
 	    }
 	}
-	    private AtividadeBean popularAtividade() {
-	        AtividadeBean atividade = id != null ? repositorio.getAtividade(id) : new AtividadeBean();
+	    private Atividade popularAtividade() {
+	        Atividade atividade = id != null ? repositorio.getAtividade(id) : new Atividade();
 	        atividade.setDescricao(campoDescricao.getText().toString());
 	        atividade.setPrazo(campoPrazo.getText().toString());
 	        //carro.setAno(Integer.parseInt(campoAno.getText().toString()));
@@ -102,7 +101,7 @@ public class FormularioTarefa extends Activity {
 	        return atividade;
 	      }
 	    
-	    public void salvar(final AtividadeBean atividade) {
+	    public void salvar(final Atividade atividade) {
 	        final ProgressDialog dialog = ProgressDialog.show(this, "Aguarde",
 	            "Salvando atividade, por aguarde...", false, true);
 	        new Thread() {
@@ -122,7 +121,7 @@ public class FormularioTarefa extends Activity {
 	        }.start();
 	      }
 	    
-	    public void excluir(final AtividadeBean atividade) {
+	    public void excluir(final Atividade atividade) {
 	        final ProgressDialog dialog = ProgressDialog.show(this, "Aguarde",
 	            "Excluindo atividade, por aguarde...", false, true);
 	        new Thread() {

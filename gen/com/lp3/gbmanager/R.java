@@ -18,10 +18,6 @@ public final class R {
     }
     public static final class dimen {
         /**  Default screen margins, per the Android Design guidelines. 
-
-         Customize dimensions originally defined in res/values/dimens.xml (such as
-         screen margins) for sw720dp devices (e.g. 10" tablets) in landscape here.
-    
          */
         public static final int activity_horizontal_margin=0x7f040000;
         public static final int activity_vertical_margin=0x7f040001;
@@ -40,84 +36,94 @@ public final class R {
         public static final int novo=0x7f02000a;
     }
     public static final class id {
-        public static final int ImageButton02=0x7f090025;
-        public static final int LinearLayout1=0x7f090024;
-        public static final int LinearLayout10=0x7f090018;
-        public static final int LinearLayout12=0x7f090017;
-        public static final int LinearLayout1_novaTarefa=0x7f090037;
-        public static final int LinearLayout2=0x7f090000;
-        public static final int RelativeLayout1=0x7f090034;
-        public static final int RelativeLayout1_OS=0x7f09003a;
-        public static final int action_settings=0x7f09004d;
-        public static final int botao2=0x7f090027;
-        public static final int botao3=0x7f09002a;
-        public static final int botao5=0x7f09002c;
-        public static final int botoes=0x7f09004b;
-        public static final int bt1=0x7f090016;
-        public static final int bt10=0x7f09001b;
-        public static final int button1=0x7f090014;
-        public static final int button1_OS=0x7f090048;
-        public static final int button2=0x7f090015;
-        public static final int button2_OS=0x7f090049;
-        public static final int button_form_tarefa_excluir=0x7f090039;
-        public static final int button_form_tarefa_salvar=0x7f090038;
-        public static final int chkSalvar=0x7f09004c;
-        public static final int cliente=0x7f09001e;
-        public static final int contrato=0x7f09001f;
-        public static final int descricao=0x7f090022;
-        public static final int editText1=0x7f090008;
-        public static final int editText1_OS=0x7f09003c;
-        public static final int editText2=0x7f090009;
-        public static final int editText2_OS=0x7f09003f;
-        public static final int editText2_minhasTarefas=0x7f090033;
-        public static final int editText3=0x7f09000c;
-        public static final int editText3_OS=0x7f090040;
-        public static final int editText4=0x7f090012;
-        public static final int editText4_OS=0x7f090042;
-        public static final int editText5=0x7f090036;
-        public static final int editText5_OS=0x7f090047;
-        public static final int editText_minhasTarefas=0x7f090030;
-        public static final int endereco=0x7f090020;
-        public static final int id=0x7f09001d;
-        public static final int imageButton1=0x7f090028;
-        public static final int imageButton2=0x7f090026;
-        public static final int imageButton3=0x7f090029;
-        public static final int imageButton4=0x7f09002e;
-        public static final int imageButton5=0x7f09002d;
-        public static final int imageView1=0x7f090002;
-        public static final int imagem=0x7f09001c;
-        public static final int linearLayout1=0x7f090001;
-        public static final int linearLayout11=0x7f090019;
-        public static final int linearLayout2=0x7f090004;
-        public static final int linearLayout3=0x7f090007;
-        public static final int linearLayout4=0x7f09000a;
-        public static final int linearLayout5=0x7f09000d;
-        public static final int linearLayout6=0x7f090010;
-        public static final int linearLayout7=0x7f090013;
-        public static final int prazo=0x7f090021;
-        public static final int spinner1=0x7f090011;
-        public static final int spinner1_OS=0x7f090044;
-        public static final int tela_login=0x7f09004a;
-        public static final int textView1=0x7f090003;
-        public static final int textView10=0x7f09001a;
-        public static final int textView1_OS=0x7f09003b;
-        public static final int textView2=0x7f090005;
-        public static final int textView2_OS=0x7f09003d;
-        public static final int textView3=0x7f090006;
-        public static final int textView3_OS=0x7f09003e;
-        public static final int textView3_minhasTarefas=0x7f090031;
-        public static final int textView4=0x7f09000b;
-        public static final int textView4_OS=0x7f090041;
-        public static final int textView4_minhasTarefas=0x7f090032;
-        public static final int textView5=0x7f09000e;
-        public static final int textView5_OS=0x7f090043;
-        public static final int textView6=0x7f09000f;
-        public static final int textView6_OS=0x7f090045;
-        public static final int textView7=0x7f090035;
-        public static final int textView7_OS=0x7f090046;
-        public static final int textView9=0x7f09002b;
-        public static final int textView_minhasTarefas=0x7f09002f;
-        public static final int usuario=0x7f090023;
+        public static final int ImageButton02=0x7f080025;
+        public static final int LinearLayout1=0x7f080024;
+        public static final int LinearLayout10=0x7f080018;
+        public static final int LinearLayout12=0x7f080017;
+        public static final int LinearLayout1_novaTarefa=0x7f080042;
+        public static final int LinearLayout2=0x7f080000;
+        public static final int RelativeLayout1=0x7f080034;
+        public static final int RelativeLayout1_OS=0x7f080045;
+        public static final int botao2=0x7f080027;
+        public static final int botao3=0x7f08002a;
+        public static final int botao5=0x7f08002c;
+        public static final int botoes=0x7f080056;
+        public static final int bt1=0x7f080016;
+        public static final int bt10=0x7f08001b;
+        public static final int button1=0x7f080014;
+        public static final int button1_OS=0x7f080053;
+        public static final int button2=0x7f080015;
+        public static final int button2_OS=0x7f080054;
+        public static final int button_form_tarefa_excluir=0x7f080044;
+        public static final int button_form_tarefa_salvar=0x7f080043;
+        public static final int button_os_excluir=0x7f08003e;
+        public static final int button_os_salvar=0x7f08003d;
+        public static final int chkSalvar=0x7f080057;
+        public static final int cliente=0x7f08001e;
+        public static final int contrato=0x7f08001f;
+        public static final int descricao=0x7f080022;
+        public static final int editCliente=0x7f080035;
+        public static final int editContrato=0x7f080036;
+        public static final int editDescricao=0x7f080038;
+        public static final int editEmail=0x7f08000c;
+        public static final int editEndereco=0x7f080037;
+        public static final int editMatricula=0x7f080009;
+        public static final int editNome=0x7f080008;
+        public static final int editPrazo=0x7f08003c;
+        public static final int editSenha=0x7f080012;
+        public static final int editText1=0x7f080040;
+        public static final int editText1_OS=0x7f080047;
+        public static final int editText2=0x7f08003b;
+        public static final int editText2_OS=0x7f08004a;
+        public static final int editText2_minhasTarefas=0x7f080033;
+        public static final int editText3=0x7f080041;
+        public static final int editText3_OS=0x7f08004b;
+        public static final int editText4=0x7f080039;
+        public static final int editText4_OS=0x7f08004d;
+        public static final int editText5=0x7f08003f;
+        public static final int editText5_OS=0x7f080052;
+        public static final int editText_minhasTarefas=0x7f080030;
+        public static final int endereco=0x7f080020;
+        public static final int id=0x7f08001d;
+        public static final int imageButton1=0x7f080028;
+        public static final int imageButton2=0x7f080026;
+        public static final int imageButton3=0x7f080029;
+        public static final int imageButton4=0x7f08002e;
+        public static final int imageButton5=0x7f08002d;
+        public static final int imageView1=0x7f080002;
+        public static final int imagem=0x7f08001c;
+        public static final int linearLayout1=0x7f080001;
+        public static final int linearLayout11=0x7f080019;
+        public static final int linearLayout2=0x7f080004;
+        public static final int linearLayout3=0x7f080007;
+        public static final int linearLayout4=0x7f08000a;
+        public static final int linearLayout5=0x7f08000d;
+        public static final int linearLayout6=0x7f080010;
+        public static final int linearLayout7=0x7f080013;
+        public static final int prazo=0x7f080021;
+        public static final int spinner1=0x7f080011;
+        public static final int spinner1_OS=0x7f08004f;
+        public static final int tela_login=0x7f080055;
+        public static final int textView1=0x7f080003;
+        public static final int textView10=0x7f08001a;
+        public static final int textView1_OS=0x7f080046;
+        public static final int textView2=0x7f080005;
+        public static final int textView2_OS=0x7f080048;
+        public static final int textView3=0x7f080006;
+        public static final int textView3_OS=0x7f080049;
+        public static final int textView3_minhasTarefas=0x7f080031;
+        public static final int textView4=0x7f08000b;
+        public static final int textView4_OS=0x7f08004c;
+        public static final int textView4_minhasTarefas=0x7f080032;
+        public static final int textView5=0x7f08000e;
+        public static final int textView5_OS=0x7f08004e;
+        public static final int textView6=0x7f08000f;
+        public static final int textView6_OS=0x7f080050;
+        public static final int textView7=0x7f08003a;
+        public static final int textView7_OS=0x7f080051;
+        public static final int textView9=0x7f08002b;
+        public static final int textView_minhasTarefas=0x7f08002f;
+        public static final int usuario=0x7f080023;
     }
     public static final class layout {
         public static final int activity_cadastro_usuario=0x7f030000;
@@ -133,19 +139,6 @@ public final class R {
         public static final int ordem_de_servico=0x7f03000a;
         public static final int preferencias=0x7f03000b;
         public static final int tela_inicial=0x7f03000c;
-    }
-    public static final class menu {
-        public static final int alarme=0x7f080000;
-        public static final int cadastro_usuario=0x7f080001;
-        public static final int edicao_preferencias=0x7f080002;
-        public static final int lista_atividades=0x7f080003;
-        public static final int menu__adm=0x7f080004;
-        public static final int minhas_tarefas=0x7f080005;
-        public static final int nova_ordem_servico=0x7f080006;
-        public static final int nova_tarefa=0x7f080007;
-        public static final int ordem_de_servico=0x7f080008;
-        public static final int tarefas=0x7f080009;
-        public static final int tela_inicial=0x7f08000a;
     }
     public static final class string {
         public static final int action_settings=0x7f050001;
@@ -228,17 +221,6 @@ public final class R {
             res/values-vXX/styles.xml, while customizations related to
             backward-compatibility can go here.
         
-
-        Base application theme for API 11+. This theme completely replaces
-        AppBaseTheme from res/values/styles.xml on API 11+ devices.
-    
- API 11 theme customizations can go here. 
-
-        Base application theme for API 14+. This theme completely replaces
-        AppBaseTheme from BOTH res/values/styles.xml and
-        res/values-v11/styles.xml on API 14+ devices.
-    
- API 14 theme customizations can go here. 
          */
         public static final int AppBaseTheme=0x7f070000;
         /**  Application theme. 
