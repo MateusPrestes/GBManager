@@ -1,7 +1,7 @@
 package com.lp3.gbmanager;
 
 
-import com.lp3.gbmanager.model.AtividadeBean;
+import com.lp3.gbmanager.model.Atividade;
 import com.lp3.gbmanager.model.RepositorioAtividadesDB;
 
 import android.os.Bundle;
@@ -33,7 +33,7 @@ public class NovaTarefa extends Activity {
 		EditText campoDescricao = (EditText)findViewById(R.id.editText1);
 		  Spinner campoUsuario = (Spinner)findViewById(R.id.spinner1);
 		  EditText campoPrazo = (EditText)findViewById(R.id.editText2);
-		AtividadeBean a = new AtividadeBean();
+		Atividade a = new Atividade();
 		a.setDescricao(campoDescricao.getText().toString());
 		a.setPrazo(campoPrazo.getText().toString());
 		repositorio.salvar(a);

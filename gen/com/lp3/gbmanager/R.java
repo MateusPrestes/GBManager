@@ -67,6 +67,14 @@ public final class R {
         public static final int cliente=0x7f0a001e;
         public static final int contrato=0x7f0a001f;
         public static final int descricao=0x7f0a0022;
+        public static final int editCliente=0x7f080035;
+        public static final int editContrato=0x7f080036;
+        public static final int editDescricao=0x7f080038;
+        public static final int editEmail=0x7f08000c;
+        public static final int editEndereco=0x7f080037;
+        public static final int editMatricula=0x7f080009;
+        public static final int editNome=0x7f080008;
+        public static final int editPrazo=0x7f08003c;
         public static final int editText1=0x7f0a0008;
         public static final int editText1_OS=0x7f0a003c;
         public static final int editText2=0x7f0a0009;
@@ -267,3 +275,4 @@ public final class R {
         public static final int preferencias=0x7f040000;
     }
 }
+

@@ -26,7 +26,7 @@ public class RepositorioAtividadesDB {
 	
 	
 	
-	public boolean salvar(AtividadeBean atividade) {
+	public boolean salvar(Atividade atividade) {
 		// TODO Auto-generated method stub
 		SQLiteDatabase sqLite = new AtividadesData(context).getWritableDatabase();
 		 
@@ -44,7 +44,7 @@ public class RepositorioAtividadesDB {
 		return true;
 	}
 	
-	public boolean deletar(AtividadeBean atividade) {
+	public boolean deletar(Atividade atividade) {
 		// TODO Auto-generated method stub
 		SQLiteDatabase db = new AtividadesData(context).getWritableDatabase();  
 	
@@ -59,7 +59,7 @@ public class RepositorioAtividadesDB {
 		return false;
 	}
 	
-	public AtividadeBean getAtividade(Long id) {
+	public Atividade getAtividade(Long id) {
 		// TODO Auto-generated method stub
 		String where = "id = ?";
 		String args[] = {""+id};
@@ -67,7 +67,7 @@ public class RepositorioAtividadesDB {
 		Cursor cursor = db.query(tabela,colunas,where,args,null,null,null);
 		if (cursor.getCount() > 0){
 			cursor.moveToFirst();
-			AtividadeBean atividade = new AtividadeBean(cursor.getString(cursor.getColumnIndex("cliente")),
+			Atividade atividade = new Atividade(cursor.getString(cursor.getColumnIndex("cliente")),
 					cursor.getString(cursor.getColumnIndex("end")),
 					cursor.getString(cursor.getColumnIndex("descricao")), cursor.getString(cursor.getColumnIndex("usuario")), cursor.getString(cursor.getColumnIndex("prazo")), cursor.getString(cursor.getColumnIndex("contrato")), cursor.getLong(cursor.getColumnIndex("id")));
 			//atividade.setId(Long.valueOf(cursor.getInt(cursor.getColumnIndex("id"))));
@@ -79,16 +79,16 @@ public class RepositorioAtividadesDB {
 		return null;
 	}
 	
-	public List<AtividadeBean> listarAtividades() {
+	public List<Atividade> listarAtividades() {
 		// TODO Auto-generated method stub
 		SQLiteDatabase db = new  AtividadesData(context).getReadableDatabase();
 		Cursor cursor = db.query(tabela,colunas,null,null,null,null,null);
-		List<AtividadeBean> lista = new ArrayList<AtividadeBean>();
+		List<Atividade> lista = new ArrayList<Atividade>();
 		if (cursor.getCount() > 0){
 			    cursor.moveToFirst();
 			
 			do{
-				lista.add(new AtividadeBean(cursor.getString(cursor.getColumnIndex("cliente")),
+				lista.add(new Atividade(cursor.getString(cursor.getColumnIndex("cliente")),
 						cursor.getString(cursor.getColumnIndex("end")),
 						cursor.getString(cursor.getColumnIndex("descricao")), cursor.getString(cursor.getColumnIndex("usuario")), cursor.getString(cursor.getColumnIndex("prazo")), cursor.getString(cursor.getColumnIndex("contrato")), cursor.getLong(cursor.getColumnIndex("id"))));
 				//lista.get(lista.size()-1).setId(Long.valueOf(cursor.getInt(cursor.getColumnIndex("id"))));
@@ -99,7 +99,7 @@ public class RepositorioAtividadesDB {
 		return lista;
 	}
 	
-	public AtividadeBean buscaAtividades(String nome) {
+	public Atividade buscaAtividades(String nome) {
 		// TODO Auto-generated method stub
 		String where = "nome = ? ";
 		
@@ -109,7 +109,7 @@ public class RepositorioAtividadesDB {
 		if (cursor.getCount() > 0)
 		{
 			cursor.moveToFirst();
-			AtividadeBean atividade = new AtividadeBean(cursor.getString(cursor.getColumnIndex("cliente")),
+			Atividade atividade = new Atividade(cursor.getString(cursor.getColumnIndex("cliente")),
 					cursor.getString(cursor.getColumnIndex("end")),
 					cursor.getString(cursor.getColumnIndex("descricao")), cursor.getString(cursor.getColumnIndex("usuario")), cursor.getString(cursor.getColumnIndex("prazo")), cursor.getString(cursor.getColumnIndex("contrato")), cursor.getLong(cursor.getColumnIndex("id")));
 			//carro.setId(Long.valueOf(cursor.getInt(cursor.getColumnIndex("id"))));

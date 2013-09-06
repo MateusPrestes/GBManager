@@ -72,23 +72,23 @@
         android:orientation="horizontal" >
 
         <EditText
-            android:id="@+id/editText1"
+            android:id="@+id/editNome"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:focusable="false"
+            
             android:inputType="textPersonName" >
 
             <requestFocus />
         </EditText>
 
         <EditText
-            android:id="@+id/editText2"
+            android:id="@+id/editMatricula"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
             android:ems="10"
-            android:focusable="false"
+            
             android:inputType="number" />
     </LinearLayout>
 
@@ -107,11 +107,11 @@
             android:text="@string/email" />
 
         <EditText
-            android:id="@+id/editText3"
+            android:id="@+id/editEmail"
             android:layout_width="match_parent"
             android:layout_height="45dp"
             android:ems="10"
-            android:focusable="false"
+            
             android:inputType="textEmailAddress" />
     </LinearLayout>
 
@@ -155,12 +155,11 @@
             android:entries="@array/opcoesSpinner" />
 
         <EditText
-            android:id="@+id/editText4"
+            android:id="@+id/editSenha"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
             android:ems="10"
-            android:focusable="false"
             android:inputType="textPassword" />
     
 	</LinearLayout>
@@ -177,14 +176,16 @@
             android:id="@+id/button1"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="@string/enviar" />
+            android:text="@string/enviar"
+            android:onClick="salvarUsuario" />
 
         <Button
             android:id="@+id/button2"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
-            android:text="@string/limpar" />
+            android:text="@string/limpar" 
+            />
 
     </LinearLayout>
     

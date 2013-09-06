@@ -1,25 +1,38 @@
 package com.lp3.gbmanager;
 
+
 import java.util.Locale;
+
+import com.lp3.gbmanager.model.RepositorioUsuario;
+import com.lp3.gbmanager.model.RepositorioUsuarioFactory;
+import com.lp3.gbmanager.model.Usuario;
+
 
 import android.os.Bundle;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
+
 import android.content.SharedPreferences.OnSharedPreferenceChangeListener;
 import android.content.res.Configuration;
+
+import android.util.Log;
+
 import android.view.Menu;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class TelaInicial extends Activity {
 
 	public static final String PREFS_NAME = "Preferences";
-    EditText etUsuario;
-    EditText etSenha;
-    
+    	EditText etUsuario;
+    	EditText etSenha;
+
+    	RepositorioUsuario repositorio ;
+
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +40,7 @@ public class TelaInicial extends Activity {
 		setContentView(R.layout.tela_inicial);
 		etUsuario = (EditText)findViewById(R.id.editText1);
         etSenha = (EditText)findViewById(R.id.editText2);
-         
+        
         //Restaura as preferencias gravadas
         SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
         etUsuario.setText(settings.getString("PrefUsuario", ""));
@@ -42,33 +55,46 @@ public class TelaInicial extends Activity {
 	
 	public void Click(View v){
 		EditText login = (EditText)findViewById(R.id.editText1);
+		EditText senha = (EditText)findViewById(R.id.editText2);
 		String texto = login.getText().toString();
 		texto=texto.trim();
 		System.out.println("TEXTO= "+texto);
-		if(texto.equals("adm")){
-			
-			Intent menu = new Intent(this, Menu_Adm.class);
-			startActivity(menu);
-			
-		}
-		else{
-			ClickAtividades();
+		repositorio = new RepositorioUsuarioFactory().getRepositorioCarro(this);
+		
+		if(repositorio.buscaUsuario(texto)!=null){
+			Usuario user_login = repositorio.buscaUsuario(texto);
+			Log.i("SENHA DB", user_login.getSenha());
+			Log.i("SENHA DIGITADA", senha.getText().toString());
+			if(user_login.getSenha().equals(senha.getText().toString())){
+				Log.i("SENHAS", "IGUAIS");
+				Intent menu = new Intent(this, Menu_Adm.class);
+				startActivity(menu);
+			}else{
+				Toast t = Toast.makeText(this, "Senha invÃ¡lida", Toast.LENGTH_SHORT);
+				t.show();
+			}
+		}else{
+			Toast t = Toast.makeText(this, "UsuÃ¡rio Inexistente", Toast.LENGTH_SHORT);
+			t.show();
 		}
 		
+		
+		
+		
 	}
-	 /**Chamado quando a Activity é encerrada.*/
+	 /**Chamado quando a Activity ï¿½ encerrada.*/
     @Override
     protected void onStop(){
        super.onStop();
  
-       //Caso o checkbox esteja marcado gravamos o usuário
+       //Caso o checkbox esteja marcado gravamos o usuï¿½rio
        CheckBox chkSalvar = (CheckBox)findViewById(R.id.chkSalvar);
        if (chkSalvar.isChecked()){
            SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
            SharedPreferences.Editor editor = settings.edit();
            editor.putString("PrefUsuario", etUsuario.getText().toString());
      
-           //Confirma a gravação dos dados
+           //Confirma a gravaï¿½ï¿½o dos dados
            editor.commit();
        }
        else{
@@ -76,12 +102,12 @@ public class TelaInicial extends Activity {
     	   SharedPreferences.Editor editor = settings.edit();
     	   editor.putString("PrefUsuario", "");
 
-    	   //Confirma a gravação dos dados
+    	   //Confirma a gravaï¿½ï¿½o dos dados
     	   editor.commit();    	   
        }
     }
     
-  //Evento click do botão Fechar prorama
+  //Evento click do botï¿½o Fechar prorama
     public void btnFechar_Click(View v){
     	Intent intent = new Intent(Intent.ACTION_MAIN);
     	finish();
