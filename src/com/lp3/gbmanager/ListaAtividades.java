@@ -45,7 +45,7 @@ public class ListaAtividades extends ListActivity implements OnSharedPreferenceC
 		    repositorio = new RepositorioAtividadesDB(this);
 		    // Atualiza a lista com os carros.
 		    atualizarLista();
-		    setFonte();
+		    //setFonte();
 	        //setCorFonte();
 	        SharedPreferences pref = PreferenceManager.getDefaultSharedPreferences(this);
 			pref.registerOnSharedPreferenceChangeListener((OnSharedPreferenceChangeListener) this);
@@ -57,7 +57,7 @@ public class ListaAtividades extends ListActivity implements OnSharedPreferenceC
 	public void onResume(){
 		  super.onResume();
 	      
-	      setFonte();
+	      //setFonte();
 	      //setCorFonte();
 		 
 		}
