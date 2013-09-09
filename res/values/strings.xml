@@ -111,7 +111,7 @@
     <string name="fonte">Tamanho da fonte</string>
     <string name="summary_fonte">Tamanho da fonte para a Lista de Monitoramento</string>
     <string name="corFonte">Cor da fonte</string>
-    <string name="summary_corFonte">Selecione a cor da fonte para a Lista de Monitoramento</string>
+    <string name="summary_corFonte">Selecione a cor da fonte para o Menu</string>
     <string name="dialogCFonte">Selecione a Cor da Fonte</string>
     <string name="PfMonitoramento">Preferências do Monitoramento</string>
     <string name="PfGeral">Preferências Gerais</string>

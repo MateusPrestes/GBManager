@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.util.Log;
 import android.view.View;
+import android.widget.TextView;
 
 public class Menu_Adm extends Activity implements OnSharedPreferenceChangeListener{
 	public boolean select = false;
@@ -71,10 +72,83 @@ public void onSharedPreferenceChanged(SharedPreferences pref, String key) {
 			    select = true;
 			}
 		}
+		if(key.equals("fonte")){
+			Log.i("DEBUG", "VAI CHAMAR SETFONTE");
+			setFonte();
+		}
+		if(key.equals("colorf")){
+			Log.i("DEBUG", "VAI CHAMAR COLORFONTE");
+			setCorFonte();
+		}
+		
+		
     }
+public void setFonte(){
+	Log.i("DEBUG","CHAMOU SETFONTE");
+	if(EdicaoPreferencias.fontePreferencia(this).equals("12")){
+		EdicaoPreferencias.setFonte(12, (TextView)findViewById(R.id.textView2));
+		EdicaoPreferencias.setFonte(12, (TextView)findViewById(R.id.textView3));
+		EdicaoPreferencias.setFonte(12, (TextView)findViewById(R.id.textView4));
+		EdicaoPreferencias.setFonte(12, (TextView)findViewById(R.id.textView5));
+		EdicaoPreferencias.setFonte(12, (TextView)findViewById(R.id.textView9));
+		
+		
 
+	}
+    if(EdicaoPreferencias.fontePreferencia(this).equals("14")){
+    	EdicaoPreferencias.setFonte(14, (TextView)findViewById(R.id.textView2));
+		EdicaoPreferencias.setFonte(14, (TextView)findViewById(R.id.textView3));
+		EdicaoPreferencias.setFonte(14, (TextView)findViewById(R.id.textView4));
+		EdicaoPreferencias.setFonte(14, (TextView)findViewById(R.id.textView5));
+		EdicaoPreferencias.setFonte(14, (TextView)findViewById(R.id.textView9));
+
+    }
+	if(EdicaoPreferencias.fontePreferencia(this).equals("16")){
+		EdicaoPreferencias.setFonte(16, (TextView)findViewById(R.id.textView2));
+		EdicaoPreferencias.setFonte(16, (TextView)findViewById(R.id.textView3));
+		EdicaoPreferencias.setFonte(16, (TextView)findViewById(R.id.textView4));
+		EdicaoPreferencias.setFonte(16, (TextView)findViewById(R.id.textView5));
+		EdicaoPreferencias.setFonte(16, (TextView)findViewById(R.id.textView9));
+
+	}
+	
+	if(EdicaoPreferencias.fontePreferencia(this).equals("18")){
+		EdicaoPreferencias.setFonte(18, (TextView)findViewById(R.id.textView2));
+		EdicaoPreferencias.setFonte(18, (TextView)findViewById(R.id.textView3));
+		EdicaoPreferencias.setFonte(18, (TextView)findViewById(R.id.textView4));
+		EdicaoPreferencias.setFonte(18, (TextView)findViewById(R.id.textView5));
+		EdicaoPreferencias.setFonte(18, (TextView)findViewById(R.id.textView9));
+	}
+}
+
+public void setCorFonte(){
+	if(EdicaoPreferencias.corFontePreferencia(this).equals("preto")){	
+		EdicaoPreferencias.setColorFonte("#000000", (TextView)findViewById(R.id.textView2));
+		EdicaoPreferencias.setColorFonte("#000000", (TextView)findViewById(R.id.textView3));
+		EdicaoPreferencias.setColorFonte("#000000", (TextView)findViewById(R.id.textView4));
+		EdicaoPreferencias.setColorFonte("#000000", (TextView)findViewById(R.id.textView5));
+		EdicaoPreferencias.setColorFonte("#000000", (TextView)findViewById(R.id.textView9));
+	}
+	if(EdicaoPreferencias.corFontePreferencia(this).equals("verde")){	
+		EdicaoPreferencias.setColorFonte("#238E23", (TextView)findViewById(R.id.textView2));
+		EdicaoPreferencias.setColorFonte("#238E23", (TextView)findViewById(R.id.textView3));
+		EdicaoPreferencias.setColorFonte("#238E23", (TextView)findViewById(R.id.textView4));
+		EdicaoPreferencias.setColorFonte("#238E23", (TextView)findViewById(R.id.textView5));
+		EdicaoPreferencias.setColorFonte("#238E23", (TextView)findViewById(R.id.textView9));
+	}
+	if(EdicaoPreferencias.corFontePreferencia(this).equals("vermelho")){	
+		EdicaoPreferencias.setColorFonte("#FF0000", (TextView)findViewById(R.id.textView2));
+		EdicaoPreferencias.setColorFonte("#FF0000", (TextView)findViewById(R.id.textView3));
+		EdicaoPreferencias.setColorFonte("#FF0000", (TextView)findViewById(R.id.textView4));
+		EdicaoPreferencias.setColorFonte("#FF0000", (TextView)findViewById(R.id.textView5));
+		EdicaoPreferencias.setColorFonte("#FF0000", (TextView)findViewById(R.id.textView9));
+	}
+}
+
+
+}
 
 
 
 	
-}
+

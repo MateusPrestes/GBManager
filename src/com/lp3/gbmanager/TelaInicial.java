@@ -11,6 +11,7 @@ import com.lp3.gbmanager.model.Usuario;
 import android.os.Bundle;
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
 
@@ -54,6 +55,8 @@ public class TelaInicial extends Activity {
 	}
 	
 	public void Click(View v){
+		final ProgressDialog dialog = ProgressDialog.show(this, "Aguarde",
+		        "Autenticando usuário, por favor aguarde...", false, true);
 		EditText login = (EditText)findViewById(R.id.editText1);
 		EditText senha = (EditText)findViewById(R.id.editText2);
 		String texto = login.getText().toString();
@@ -68,13 +71,17 @@ public class TelaInicial extends Activity {
 			if(user_login.getSenha().equals(senha.getText().toString())){
 				Log.i("SENHAS", "IGUAIS");
 				Intent menu = new Intent(this, Menu_Adm.class);
+				dialog.dismiss();
 				startActivity(menu);
+				
 			}else{
+				dialog.dismiss();
 				Toast t = Toast.makeText(this, "Senha inválida", Toast.LENGTH_SHORT);
 				t.show();
 			}
 		}else{
 			Toast t = Toast.makeText(this, "Usuário Inexistente", Toast.LENGTH_SHORT);
+			dialog.dismiss();
 			t.show();
 		}
 		
