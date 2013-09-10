@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -26,6 +27,7 @@ public class NovaOrdemServico extends Activity {
 	Spinner campoUsuario;
 	EditText campoPrazo ;
 	Long id ;
+	Atividade atividadeNova;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +40,7 @@ public class NovaOrdemServico extends Activity {
 		campoDescricao = (EditText)findViewById(R.id.editDescricao);
 		campoUsuario = (Spinner)findViewById(R.id.spinner1_OS);
 		campoPrazo = (EditText)findViewById(R.id.editPrazo);
+		campoEndereco = (EditText)findViewById(R.id.editEndereco);
 		id = null;
 		
 		 Bundle extras = getIntent().getExtras();
@@ -71,8 +74,9 @@ public class NovaOrdemServico extends Activity {
 		    Button btSalvar = (Button) findViewById(R.id.button_os_salvar);
 		    btSalvar.setOnClickListener(new OnClickListener() {
 		      public void onClick(View view) {
-		        Atividade atividade = popularAtividade();
-		        salvar(atividade);
+		        atividadeNova = popularAtividade();
+		        Log.i("NOVA ORDEM DE SERVICO", atividadeNova.getCliente()+atividadeNova.getContrato());
+		        salvar(atividadeNova);
 		      }
 		    });
 		    
@@ -93,24 +97,28 @@ public class NovaOrdemServico extends Activity {
 		}
 		    private Atividade popularAtividade() {
 		        Atividade atividade = id != null ? repositorio.getAtividade(id) : new Atividade();
-		        
+		        Log.i("ENTROU EM POPULARATIVIDADE", "OK");
 		        if(campoDescricao.getText()==null)
 		        	campoDescricao.setText("");
 		        atividade.setDescricao(campoDescricao.getText().toString());
+		        Log.i("DESCRICAO", atividade.getDescricao());
 		        if (campoPrazo.getText()==null)
 		        	campoPrazo.setText("");
 		        atividade.setPrazo(campoPrazo.getText().toString());
 		        if (campoCliente.getText()==null)
 		        	campoCliente.setText("");
 		        atividade.setCliente(campoCliente.getText().toString());
+		        Log.i("CLIENTE", atividade.getCliente());
 		        if (campoContrato.getText()==null)
 		        	campoContrato.setText("");
 		        atividade.setContrato(campoContrato.getText().toString());
-		        if (campoEndereco.getText()==null)
+		        Log.i("Contrato", atividade.getContrato());
+		        if (campoEndereco.getText().toString().equals(""));
 		        	campoEndereco.setText("");
 		        atividade.setEnd(campoEndereco.getText().toString());
+		        Log.i("Endereco", atividade.getEnd());
 		        
-		        //carro.setAno(Integer.parseInt(campoAno.getText().toString()));
+		        
 		        
 
 		        return atividade;

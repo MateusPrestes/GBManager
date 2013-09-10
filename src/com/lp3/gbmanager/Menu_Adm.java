@@ -128,6 +128,7 @@ public void setCorFonte(){
 		EdicaoPreferencias.setColorFonte("#000000", (TextView)findViewById(R.id.textView4));
 		EdicaoPreferencias.setColorFonte("#000000", (TextView)findViewById(R.id.textView5));
 		EdicaoPreferencias.setColorFonte("#000000", (TextView)findViewById(R.id.textView9));
+		EdicaoPreferencias.setColorFonte("#000000", (TextView)findViewById(R.id.textView1));
 	}
 	if(EdicaoPreferencias.corFontePreferencia(this).equals("verde")){	
 		EdicaoPreferencias.setColorFonte("#238E23", (TextView)findViewById(R.id.textView2));
@@ -135,6 +136,7 @@ public void setCorFonte(){
 		EdicaoPreferencias.setColorFonte("#238E23", (TextView)findViewById(R.id.textView4));
 		EdicaoPreferencias.setColorFonte("#238E23", (TextView)findViewById(R.id.textView5));
 		EdicaoPreferencias.setColorFonte("#238E23", (TextView)findViewById(R.id.textView9));
+		EdicaoPreferencias.setColorFonte("#238E23", (TextView)findViewById(R.id.textView1));
 	}
 	if(EdicaoPreferencias.corFontePreferencia(this).equals("vermelho")){	
 		EdicaoPreferencias.setColorFonte("#FF0000", (TextView)findViewById(R.id.textView2));
@@ -142,6 +144,7 @@ public void setCorFonte(){
 		EdicaoPreferencias.setColorFonte("#FF0000", (TextView)findViewById(R.id.textView4));
 		EdicaoPreferencias.setColorFonte("#FF0000", (TextView)findViewById(R.id.textView5));
 		EdicaoPreferencias.setColorFonte("#FF0000", (TextView)findViewById(R.id.textView9));
+		EdicaoPreferencias.setColorFonte("#FF0000", (TextView)findViewById(R.id.textView1));
 	}
 }
 
