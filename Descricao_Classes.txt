@@ -1,0 +1,84 @@
+Descrição das Classes
+
+#Pacote com.lp3.gbmanager.view
+
+-AlarmeActivity.java
+Activity responsável por exibir o aviso referente ao Alarme(Hora do Almoço).
+
+-Atividades.java
+Activity responsável por exibir as tarefas e ordens de serviço.
+
+-CadastroUsuario.java
+Activity que contém os campos necessários para cadastrar um usuário, como:Usuário,Matrícula,Email,Funcionário,Senha.
+
+-EdicaoPreferencias.java
+Classe que contém as configurações das Preferências, como por exemplo: Cor da Fonte, Tamanho da Fonte, Alarme.
+
+-FormularioTarefa.java
+Activity que contém os campos necessários para cadastrar uma Tarefa, como:Descrição, Usuário, Prazo.
+
+-ListaAtividades.java
+Classe responsável por buscar e atualizar os dados do Formulario de Tarefas.
+
+-Menu_Adm.java
+Activity que contém as opções do Menu.
+
+-MinhasTarefas.java
+Activity responsável por exibir as tarefas.
+
+-NovaOrdemServico.java
+Activity que contém os campos necessários para cadastrar uma Ordem de Serviço, como: Cliente, Contrato, Endereço,Descrição,Prazo.
+
+
+
+
+-OrdemDeServico.java
+Activity responsável por exibir as informações cadastradas em uma Ordem de Serviço.
+
+-PreferenciaHorario.java
+Classe em que o usuário poderá configurar o horário em que deseja ser avisado do almoço.
+
+-PreferenciaTempo.java
+Classe responsável por obter a hora e os minutos correspondentes e definir se o usuário quer ou não configurar um alarme.
+
+-ReceptorAlarme.java
+Classe responsável por iniciar a "AlarmeActivity.java".
+
+-ReceptorBoot.java
+Classe responsável por realizar a configuração dos alarmes toda vez que o sistema for ligado.
+
+-Tarefas.java
+Activity de Monitoramento. Mostra uma lista com os funcionários,o tipo da atividade(Tarefa ou OS),o Prazo e seu Status.
+
+-TelaInicial.java
+Activity Inicial com Login e Senha.
+
+#Pacote com.lp3.gbmanager.controller
+
+-AtividadeListAdapter.java
+Classe Adapter que recupera as atividades e atualiza o valor dos campos da tela.
+
+#Pacote com.lp3.gbmanager.model
+
+-Atividade.java
+Classe com o construtor de uma Atividade e seus métodos "set" e "get".
+
+-AtividadesData.java
+Criação do Banco de Dados Local para a entidade Atividade.
+
+-RepositorioAtividadesDB.java
+Classe responsável por acessar, salvar, deletar os dados do banco de dados local.
+
+-RepositorioUsuario.java
+Interface padrão para criar um novo Repositório de Usuário. Pode ser local ou remoto.
+
+-RepositorioUsuarioDB.java
+Classe responsavel pelo CRUD da entidade Usuario
+
+-RepositorioUsuarioFactory.java
+
+-Usuario.java
+Clase de definição de um usuário. Contém seus atributos e os respectivos getters e setters.
+
+-UsuarioData.java
+Criação do Banco de Dados local para a entidade Usuário.
