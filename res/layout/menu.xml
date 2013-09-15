@@ -84,7 +84,7 @@
                 android:id="@+id/imageButton2"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:layout_marginLeft="40dp"
+                android:layout_marginLeft="70dp"
                 android:src="@drawable/menu_" 
                 android:onClick="ClickNovaTarefa"/>
         </LinearLayout>
@@ -108,7 +108,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:typeface="monospace"
-                android:layout_marginLeft="50dp"
+                android:layout_marginLeft="60dp"
                 android:text="@string/monitoramento" />
 
         </LinearLayout>
@@ -133,7 +133,7 @@
                 android:id="@+id/imageButton3"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:layout_marginLeft="40dp"
+                android:layout_marginLeft="70dp"
                 android:src="@drawable/newtask"
                 android:onClick="ClickTarefas" />
         </LinearLayout>
@@ -143,56 +143,93 @@
             android:layout_height="wrap_content"
             android:paddingTop="10dp" >
 
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/botao3"
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal" >
-
-        </LinearLayout>
+        </LinearLayout>        
         
         
-        <LinearLayout
+         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content" 
             android:gravity="center">
 			
             <TextView
-                android:id="@+id/textView9"
+               android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="35dp"
+                android:typeface="monospace"
+               android:text="@string/configuracao"
+                 />
+
+            <TextView
+                 android:id="@+id/botao5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:typeface="monospace"
-                android:text="@string/configuracao"
-                 />
-        	</LinearLayout>
-         
-         <LinearLayout
-            android:id="@+id/botao5"
+                android:layout_marginLeft="15dp"
+                android:text="@string/txt_facebook" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/botao3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
-            
             android:orientation="horizontal" >
 
             <ImageButton
                 android:id="@+id/imageButton5"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:onClick="clickConfig"
-                android:scaleType="center"
-                android:src="@drawable/menu_" />
+                android:src="@drawable/menu_" 
+                android:onClick="clickConfig" />
 
             <Button
                 android:id="@+id/facebook"
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:text="" />
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="70dp" />
+               
+              
+        
+        </LinearLayout>
+        
+        
+        
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:gravity="center">
             
-            </LinearLayout>
+              <TextView
+                android:id="@+id/botao6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:typeface="monospace"
+                android:layout_marginLeft="150dp"
+                android:paddingTop="5dp"
+                android:text="@string/txt_twitter" />
+              
+              </LinearLayout>
+              
+         
+            <LinearLayout
+            android:id="@+id/botao7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
 
-    </LinearLayout>
-
+                <Button
+                    android:id="@+id/twitter"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="150dp" />
+                 
+               </LinearLayout>
+             
+        
+        </LinearLayout>
+        
+       
 </ScrollView>

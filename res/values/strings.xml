@@ -33,6 +33,8 @@
     <string name="txt_almoco">Hora do Almoço!</string>
     <string name="tittle_tocarAlarme">Tocar Alarme no Almoço</string>
 	<string name="txt_horario">Escolher Horário</string>
+	<string name="txt_facebook">Facebook</string>
+	<string name="txt_twitter">Twitter</string>
     
     <string-array name="spinner1_entries">
         <item>João</item>

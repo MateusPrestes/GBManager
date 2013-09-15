@@ -28,8 +28,8 @@ import android.widget.Toast;
 public class Menu_Adm extends Activity  implements OnSharedPreferenceChangeListener{
 	
 	public boolean select = false;
-	SocialAuthAdapter adapter;	
-
+	SocialAuthAdapter adapter;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -51,6 +51,22 @@ public class Menu_Adm extends Activity  implements OnSharedPreferenceChangeListe
         			
         		}
         	});
+        	
+        	
+        	Button twitter = (Button)findViewById(R.id.twitter);
+            twitter.setBackgroundResource(R.drawable.twitter);
+            	adapter = new SocialAuthAdapter(new ResponseListener());
+            	
+            	twitter.setOnClickListener(new View.OnClickListener()
+            	{
+            		public void onClick(View v)
+            		{
+            			Log.i("BOTAO_TWITTER", "Botao CLicado!");
+            			adapter.authorize(Menu_Adm.this, Provider.TWITTER);
+            			
+            			
+            		}
+            	});
 		
 		
 	}
