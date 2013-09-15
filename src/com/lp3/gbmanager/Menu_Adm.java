@@ -45,7 +45,7 @@ public class Menu_Adm extends Activity  implements OnSharedPreferenceChangeListe
         	{
         		public void onClick(View v)
         		{
-        			Log.i("BOTAO_FACEBOOoOK", "Botao CLicado!");
+        			Log.i("BOTAO_FACEBOoOoOK", "Botao CLicado!");
         			adapter.authorize(Menu_Adm.this, Provider.FACEBOOK);
         			
         			
