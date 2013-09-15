@@ -181,12 +181,15 @@
                 android:id="@+id/imageButton5"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:src="@drawable/menu_"
                 android:onClick="clickConfig"
-                 />
-            
-            
-           
+                android:scaleType="center"
+                android:src="@drawable/menu_" />
+
+            <Button
+                android:id="@+id/facebook"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:text="" />
             
             </LinearLayout>
 

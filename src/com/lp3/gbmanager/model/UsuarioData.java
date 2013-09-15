@@ -19,6 +19,7 @@ public class UsuarioData extends SQLiteOpenHelper{
 	  public void onCreate(SQLiteDatabase db) {
 		  Log.i("CRIANDO DB", "");
 		  db.execSQL("CREATE TABLE usuario (id INTEGER PRIMARY KEY AUTOINCREMENT, login TEXT, senha TEXT)");
+		  db.execSQL("INSERT INTO usuario (login, senha) VALUES ('admin', 'senha')");
 		  System.out.println("DB CRIADO");
 		  Log.i("DB CRIADO", "");
 	  }
